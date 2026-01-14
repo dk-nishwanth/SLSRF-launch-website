@@ -54,23 +54,7 @@ const Hero: React.FC = () => {
             </p>
           </div>
 
-          {/* Scroll CTA */}
-          <div 
-            onClick={() => {
-              const aboutSection = document.getElementById('about');
-              if (aboutSection) {
-                const navbarHeight = 80;
-                const targetPosition = aboutSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-              }
-            }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40 hover:opacity-100 transition-opacity duration-700 cursor-pointer group"
-          >
-             <span className="text-[10px] font-black uppercase tracking-[0.5em] mb-2 group-hover:text-[#f2921d] transition-colors">Discover</span>
-             <div className="w-[1px] h-20 bg-gradient-to-b from-[#f2921d] via-[#f2921d]/50 to-transparent relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-full bg-white animate-[scroll-hint_2s_infinite]"></div>
-             </div>
-          </div>
+         
         </div>
       </div>
 
