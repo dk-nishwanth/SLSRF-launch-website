@@ -18,6 +18,22 @@ const Navbar: React.FC = () => {
     { name: 'CONTACT', href: '#contact' },
   ];
 
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      const navbarHeight = 80; // Approximate navbar height
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <nav className={`fixed w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/90 backdrop-blur-md py-4 border-b border-white/10 shadow-2xl' : 'bg-transparent py-8'}`}>
       <div className="max-w-[1600px] mx-auto px-10 flex items-center justify-between">
@@ -41,7 +57,8 @@ const Navbar: React.FC = () => {
           {navLinks.map((link) => (
             <a 
               key={link.name} 
-              href={link.href} 
+              href={link.href}
+              onClick={(e) => handleSmoothScroll(e, link.href)}
               className="text-white text-[11px] font-bold tracking-widest hover:text-[#f2921d] transition-all relative group"
             >
               {link.name}

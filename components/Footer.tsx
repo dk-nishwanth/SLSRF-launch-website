@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
                 <div className="flex flex-col">
                     <span className="text-white text-xs font-bold uppercase tracking-widest opacity-40 mb-2">Address</span>
                     <p className="text-gray-300 font-medium text-lg leading-snug">
-                    Unit - 2, Ground floor, B-wing Hetali <br />
-                    Balkrishna CHSLD, Goregaon East, Mumbai - 400063
+                    <br />
+                    Chennai
                     </p>
                 </div>
               </div>
