@@ -3,10 +3,10 @@ import React from 'react';
 
 const Partners: React.FC = () => {
   const mainPartners = [
-    { name: 'BRiX Network', type: 'Strategic Partner' },
-    { name: 'Q DoTZ', type: 'Innovation Partner' },
-    { name: 'SNA', type: 'Associate Partner' },
-    { name: 'Marginz', type: 'Growth Partner' }
+    { name: 'BRiX Network', type: 'Strategic Partner', logo: '/BRIX NEW.png', hasLogo: true },
+    { name: 'Q DoTZ', type: 'Innovation Partner', logo: '/Quantum-dotz-logo.png', hasLogo: true },
+    { name: 'SNA', type: 'Associate Partner', logo: null, hasLogo: false },
+    { name: 'Marginz', type: 'Growth Partner', logo: '/marginz logo.jpg', hasLogo: true }
   ];
 
   return (
@@ -27,7 +27,15 @@ const Partners: React.FC = () => {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
                 <div className="h-20 w-full flex items-center justify-center mb-8 grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <span className="text-black font-black text-2xl md:text-3xl tracking-tighter uppercase text-center leading-none">{partner.name}</span>
+                    {partner.hasLogo ? (
+                      <img 
+                        src={partner.logo!} 
+                        alt={partner.name} 
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    ) : (
+                      <span className="text-black font-black text-2xl md:text-3xl tracking-tighter uppercase text-center leading-none">{partner.name}</span>
+                    )}
                 </div>
                 <div className="w-full h-px bg-gray-100 mb-6"></div>
                 <p className="text-gray-400 text-[10px] uppercase font-bold tracking-widest text-center">{partner.type}</p>

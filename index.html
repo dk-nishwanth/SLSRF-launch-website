@@ -21,6 +21,22 @@
             color: #fff;
             scroll-behavior: smooth;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Improve rendering performance */
+        img {
+            transform: translateZ(0);
+            backface-visibility: hidden;
         }
 
         .text-gbc-orange { color: var(--gbc-orange); }
@@ -34,27 +50,46 @@
         /* Sophisticated Scroll Animations */
         .reveal, .reveal-left, .reveal-right, .reveal-zoom, .reveal-skew, .reveal-fade {
             opacity: 0;
-            will-change: opacity, transform;
-            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateZ(0); /* Force GPU acceleration */
+            backface-visibility: hidden;
+            perspective: 1000px;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
 
-        .reveal { transform: translateY(60px); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal { transform: translate3d(0, 40px, 0); }
+        .reveal.active { 
+            opacity: 1; 
+            transform: translate3d(0, 0, 0);
+        }
 
-        .reveal-left { transform: translateX(-80px); }
-        .reveal-left.active { opacity: 1; transform: translateX(0); }
+        .reveal-left { transform: translate3d(-60px, 0, 0); }
+        .reveal-left.active { 
+            opacity: 1; 
+            transform: translate3d(0, 0, 0);
+        }
 
-        .reveal-right { transform: translateX(80px); }
-        .reveal-right.active { opacity: 1; transform: translateX(0); }
+        .reveal-right { transform: translate3d(60px, 0, 0); }
+        .reveal-right.active { 
+            opacity: 1; 
+            transform: translate3d(0, 0, 0);
+        }
 
-        .reveal-zoom { transform: scale(0.9); }
-        .reveal-zoom.active { opacity: 1; transform: scale(1); }
+        .reveal-zoom { transform: translate3d(0, 0, 0) scale(0.95); }
+        .reveal-zoom.active { 
+            opacity: 1; 
+            transform: translate3d(0, 0, 0) scale(1);
+        }
 
-        .reveal-skew { transform: skewY(5deg) translateY(40px); }
-        .reveal-skew.active { opacity: 1; transform: skewY(0) translateY(0); }
+        .reveal-skew { transform: translate3d(0, 30px, 0) skewY(3deg); }
+        .reveal-skew.active { 
+            opacity: 1; 
+            transform: translate3d(0, 0, 0) skewY(0);
+        }
 
-        .reveal-fade { transform: none; }
-        .reveal-fade.active { opacity: 1; }
+        .reveal-fade { transform: translate3d(0, 0, 0); }
+        .reveal-fade.active { 
+            opacity: 1;
+        }
 
         /* Delays */
         .delay-100 { transition-delay: 100ms; }

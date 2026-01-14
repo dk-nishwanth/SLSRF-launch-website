@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -13,23 +13,37 @@ import Partners from './components/Partners';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  useEffect(() => {
-    const handleReveal = () => {
-      const selectors = '.reveal, .reveal-left, .reveal-right, .reveal-zoom, .reveal-skew, .reveal-fade';
-      const reveals = document.querySelectorAll(selectors);
-      reveals.forEach((reveal) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = reveal.getBoundingClientRect().top;
-        const elementVisible = 100;
-        if (elementTop < windowHeight - elementVisible) {
-          reveal.classList.add('active');
-        }
-      });
-    };
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
-    window.addEventListener('scroll', handleReveal);
-    handleReveal(); // Initial check
-    return () => window.removeEventListener('scroll', handleReveal);
+  useEffect(() => {
+    // Use Intersection Observer for better performance
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // Optionally unobserve after animation
+            // observerRef.current?.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      }
+    );
+
+    // Observe all reveal elements
+    const selectors = '.reveal, .reveal-left, .reveal-right, .reveal-zoom, .reveal-skew, .reveal-fade';
+    const elements = document.querySelectorAll(selectors);
+    
+    elements.forEach((element) => {
+      observerRef.current?.observe(element);
+    });
+
+    return () => {
+      observerRef.current?.disconnect();
+    };
   }, []);
 
   return (
