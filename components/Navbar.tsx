@@ -35,20 +35,19 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/90 backdrop-blur-md py-4 border-b border-white/10 shadow-2xl' : 'bg-transparent py-8'}`}>
       <div className="max-w-[1600px] mx-auto px-10 flex items-center justify-between">
-        {/* Screenshot-Style Mesh Logo */}
-        <div className="flex items-center gap-3 group cursor-pointer">
-          <div className="relative w-10 h-10">
-             <div className="absolute inset-0 border border-[#f2921d]/30 rounded-full animate-[spin_10s_linear_infinite]"></div>
-             <div className="absolute inset-1 border border-[#f2921d]/60 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
-             <div className="absolute inset-0 flex items-center justify-center">
-                <i className="fas fa-leaf text-[#f2921d] text-xl"></i>
-             </div>
+        {/* Brand Logo */}
+        <a href="#top" className="flex items-center gap-3 group cursor-pointer">
+          <div className="h-10 sm:h-12 w-auto">
+            <img
+              src="/SLSRP FINAL LOGO.png"
+              alt="SLSRF Launch 2026"
+              className="h-full w-auto object-contain"
+            />
           </div>
-          <div className="flex flex-col">
-            <span className="text-white font-black text-lg tracking-tighter leading-none">SLSRF</span>
-            <span className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase leading-none mt-1">Launch - 2026</span>
-          </div>
-        </div>
+          <span className="hidden sm:inline-block text-white font-black text-lg tracking-tight leading-none group-hover:text-[#f2921d] transition-colors">
+            SLSRF
+          </span>
+        </a>
 
         {/* Navigation Links */}
         <div className="hidden lg:flex items-center space-x-10">

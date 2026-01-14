@@ -36,11 +36,22 @@ const Frontier: React.FC = () => {
                 alt="Traditional Medicinal Plants and Biodiversity" 
                 className="w-full h-full object-cover grayscale brightness-50 contrast-125 transition-transform duration-1000 group-hover:scale-105"
               />
+              {/* Dark overlay for better text contrast */}
+              <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
               {/* Massive HUMANITY text overlay */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <h3 className="text-white text-[12vw] md:text-[9rem] font-black uppercase tracking-tighter drop-shadow-[0_10px_10px_rgba(0,0,0,0.8)] leading-none select-none">
-                  HUMANITY
-                </h3>
+                <div className="w-full px-4 sm:px-8 flex justify-center">
+                  <h3
+                    className="text-white text-[11vw] sm:text-[9vw] md:text-[7vw] lg:text-[6vw] xl:text-[5.5vw] font-black uppercase tracking-tighter leading-none select-none"
+                    style={{
+                      textShadow:
+                        '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.7), 0 0 60px rgba(0,0,0,0.5), 2px 2px 4px rgba(0,0,0,0.9), -2px -2px 4px rgba(0,0,0,0.9), 2px -2px 4px rgba(0,0,0,0.9), -2px 2px 4px rgba(0,0,0,0.9)',
+                      WebkitTextStroke: '1px rgba(0,0,0,0.3)'
+                    }}
+                  >
+                    HUMANITY
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
