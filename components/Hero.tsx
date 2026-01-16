@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           loop
           muted={isMuted}
           playsInline
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-50"
           style={{
             width: '100%',
             height: '100%',
