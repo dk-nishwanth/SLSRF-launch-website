@@ -1,4 +1,5 @@
 
+import axios from 'axios';
 import React, { useState } from 'react';
 
 const Footer: React.FC = () => {
@@ -26,32 +27,24 @@ const Footer: React.FC = () => {
     setSubmitStatus({ type: null, message: '' });
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+        const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, formData);
 
-      const data = await response.json();
-
-      if (response.ok) {
+      if (res.data.success) {
         setSubmitStatus({
           type: 'success',
-          message: data.message || 'Thank you for contacting us!'
+          message: 'Thank you for contacting us!'
         });
         setFormData({ name: '', phone: '', email: '' });
       } else {
         setSubmitStatus({
           type: 'error',
-          message: data.message || 'Something went wrong. Please try again.'
+          message: 'Something went wrong. Please try again.'
         });
       }
     } catch (error) {
       setSubmitStatus({
         type: 'error',
-        message: 'Network error. Please check your connection and try again.'
+        message: `Network error. Please check your connection and try again. ${error.meesage}`
       });
     } finally {
       setIsSubmitting(false);

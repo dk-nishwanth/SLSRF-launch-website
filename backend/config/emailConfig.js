@@ -73,8 +73,6 @@ const sendMail = async (req) => {
                   <table width="100%" style="font-size:14px;">
                     <tr><td><b>Name:</b></td><td>${name}</td></tr>
                     <tr><td><b>Email:</b></td><td>${email}</td></tr>
-                    <tr><td><b>Service:</b></td><td>${service || "N/A"}</td></tr>
-                    <tr><td><b>Message:</b></td><td>${message}</td></tr>
                   </table>
                 </td></tr>
                 <tr>

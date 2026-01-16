@@ -30,6 +30,10 @@ app.use(express.json());
 // Routes
 app.use("/api/contact", contactRouter);
 
+app.get("/",(req,res)=>{
+  res.send("Running")
+})
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
