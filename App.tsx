@@ -4,10 +4,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import MarqueeSection from './components/MarqueeSection';
-import Frontier from './components/Frontier';
-import WhoBelongs from './components/WhoBelongs';
-import Transforms from './components/Transforms';
-import WhatSetsApart from './components/WhatSetsApart';
+// import Frontier from './components/Frontier';
+// import WhoBelongs from './components/WhoBelongs';
+// import Transforms from './components/Transforms';
+// import WhatSetsApart from './components/WhatSetsApart';
 import Speakers from './components/Speakers';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
@@ -53,10 +53,10 @@ const App: React.FC = () => {
         <Hero />
         <About />
         <MarqueeSection />
-        <Frontier />
-        <WhoBelongs />
-        <Transforms />
-        <WhatSetsApart />
+        {/* <Frontier /> */}
+        {/* <WhoBelongs /> */}
+        {/* <Transforms /> */}
+        {/* <WhatSetsApart /> */}
         <Speakers />
         <Partners />
       </main>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SLSRF 2026 | The Conscious Frontier</title>
+    <title>SLSRF 2026 | The Divine Launch</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -159,6 +159,50 @@
         }
         .carousel-container::-webkit-scrollbar { display: none; }
         .carousel-item { scroll-snap-align: center; flex: 0 0 auto; }
+
+        /* Consistent Laptop Sizing - Lock proportions for 1024px to 1920px */
+        @media (min-width: 1024px) and (max-width: 1920px) {
+            .hero-the {
+                font-size: clamp(5rem, 6vw, 8rem) !important;
+            }
+            .hero-divine {
+                font-size: clamp(8rem, 10vw, 13rem) !important;
+            }
+            .hero-launch {
+                font-size: clamp(5rem, 6vw, 8rem) !important;
+            }
+            .hero-date {
+                font-size: clamp(0.75rem, 0.9vw, 0.875rem) !important;
+            }
+            .hero-location {
+                font-size: clamp(0.7rem, 0.8vw, 0.75rem) !important;
+            }
+            .hero-tagline {
+                font-size: clamp(1.25rem, 1.8vw, 1.875rem) !important;
+            }
+        }
+
+        /* Ultra-wide screens (1920px+) - Cap maximum sizes */
+        @media (min-width: 1920px) {
+            .hero-the {
+                font-size: 8rem !important;
+            }
+            .hero-divine {
+                font-size: 13rem !important;
+            }
+            .hero-launch {
+                font-size: 8rem !important;
+            }
+            .hero-date {
+                font-size: 0.875rem !important;
+            }
+            .hero-location {
+                font-size: 0.75rem !important;
+            }
+            .hero-tagline {
+                font-size: 1.875rem !important;
+            }
+        }
     </style>
 <script type="importmap">
 {

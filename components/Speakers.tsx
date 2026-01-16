@@ -30,13 +30,13 @@ const Speakers: React.FC = () => {
   ];
 
   return (
-    <section id="speakers" className="py-24 bg-black px-6">
+    <section id="speakers" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-black px-4 sm:px-6">
       <div className="max-w-[1400px] mx-auto">
-        <h2 className="text-[#f2921d] text-7xl md:text-9xl font-black uppercase tracking-tighter mb-16 reveal-left">
+        <h2 className="text-[#f2921d] text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-black uppercase tracking-tighter mb-10 sm:mb-12 md:mb-16 reveal-left">
           SPEAKERS
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {speakers.map((s, i) => (
             <div 
               key={i} 

@@ -54,7 +54,7 @@ const MarqueeSection: React.FC = () => {
   };
 
   return (
-    <section id="marquee" className="py-24 bg-black overflow-hidden">
+    <section id="marquee" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-black overflow-hidden">
       <div className="text-center mb-16 reveal">
         <p className="text-[#f2921d] text-lg md:text-2xl font-bold uppercase tracking-[0.3em] mt-6">
           Conscious Science • National Knowledge • Sustainable Futures

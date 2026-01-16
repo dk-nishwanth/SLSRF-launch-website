@@ -33,24 +33,24 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/40 backdrop-blur-sm py-4 border-b border-white/10' : 'bg-transparent py-8'}`}>
-      <div className="max-w-[1600px] mx-auto px-10 flex items-center justify-between">
+    <nav className={`fixed w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/90 backdrop-blur-md py-3 sm:py-4 border-b border-white/10 shadow-2xl' : 'bg-transparent py-4 sm:py-6 md:py-8'}`}>
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-10 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#top" className="flex items-center gap-3 group cursor-pointer">
-          <div className="h-10 sm:h-12 w-auto">
+        <a href="#top" className="flex items-center gap-2 sm:gap-3 group cursor-pointer">
+          <div className="h-8 sm:h-10 md:h-12 w-auto">
             <img
               src="/SLSRP FINAL LOGO.png"
               alt="SLSRF Launch 2026"
               className="h-full w-auto object-contain"
             />
           </div>
-          <span className="hidden sm:inline-block text-white font-black text-lg tracking-tight leading-none group-hover:text-[#f2921d] transition-colors">
+          <span className="hidden sm:inline-block text-white font-black text-base sm:text-lg tracking-tight leading-none group-hover:text-[#f2921d] transition-colors">
             SLSRF
           </span>
         </a>
 
         {/* Navigation Links */}
-        <div className="hidden lg:flex items-center space-x-10">
+        <div className="hidden lg:flex items-center space-x-8 xl:space-x-10">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
@@ -64,8 +64,8 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* Placeholder for menu consistency */}
-        <div className="lg:hidden text-white text-xl">
+        {/* Mobile Menu Icon */}
+        <div className="lg:hidden text-white text-lg sm:text-xl">
            <i className="fas fa-bars-staggered"></i>
         </div>
       </div>
