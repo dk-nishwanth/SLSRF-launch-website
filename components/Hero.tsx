@@ -20,20 +20,21 @@ const Hero: React.FC = () => {
           loop
           muted={isMuted}
           playsInline
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-40"
           style={{
             width: '100%',
             height: '100%',
             objectFit: 'cover',
             transform: 'scale(1.25)',
-            transformOrigin: 'center center'
+            transformOrigin: 'center center',
+            filter: 'blur(3px) brightness(0.7)'
           }}
         >
           <source src="/shorter video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-black/95 z-10"></div>
+        {/* Overlay for better text readability - darker and more prominent */}
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
       </div>
 
       <div className="relative z-20 w-full max-w-[1400px] px-10 pt-24 md:pt-32">
