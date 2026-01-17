@@ -3,6 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Highlights from './components/Highlights';
+import Pillars from './components/Pillars';
 import MarqueeSection from './components/MarqueeSection';
 // import Frontier from './components/Frontier';
 // import WhoBelongs from './components/WhoBelongs';
@@ -10,6 +12,7 @@ import MarqueeSection from './components/MarqueeSection';
 // import WhatSetsApart from './components/WhatSetsApart';
 import Speakers from './components/Speakers';
 import Partners from './components/Partners';
+import Location from './components/Location';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -52,6 +55,8 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <About />
+        <Highlights />
+        <Pillars />
         <MarqueeSection />
         {/* <Frontier /> */}
         {/* <WhoBelongs /> */}
@@ -59,6 +64,7 @@ const App: React.FC = () => {
         {/* <WhatSetsApart /> */}
         <Speakers />
         <Partners />
+        <Location />
       </main>
       <Footer />
     </div>

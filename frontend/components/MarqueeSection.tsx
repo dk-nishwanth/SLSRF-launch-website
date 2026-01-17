@@ -53,9 +53,9 @@ const MarqueeSection: React.FC = () => {
   };
 
   return (
-    <section id="marquee" className="responsive-section bg-black overflow-hidden">
+    <section id="marquee" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-black overflow-hidden">
       <div className="text-center mb-16 reveal">
-        <div className="responsive-container">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6">
           {/* Main tagline with enhanced typography */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 md:gap-12">
             <div className="flex items-center gap-3">

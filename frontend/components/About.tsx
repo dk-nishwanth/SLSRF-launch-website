@@ -8,24 +8,24 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4">
         <div className="lg:col-span-3 bg-[#f2921d] about-orange-section flex flex-col justify-center reveal-left">
           <h2 className="text-white about-orange-title font-black uppercase leading-[0.9] tracking-tighter mb-4 sm:mb-6 title-underline">
-            Semporutkalai 2047 <br /> For sustenance
+            #thesemporutkalaivision <br /> A zeal for sustenance
           </h2>
           <p className="text-white/95 about-orange-text font-medium max-w-3xl leading-relaxed mt-3 sm:mt-4">
-            SLSRF 2026 brings together researchers, policymakers, conservationists, and thought leaders to advance conscious science, preserve traditional knowledge, and build sustainable solutions for India's biodiversity and environmental challenges.
+            SLSRF operates at the convergence of science, society, and public policy, ensuring that research translates into actionable knowledge, institutional frameworks, and measurable real-world outcomes.
           </p>
         </div>
         <div className="bg-[#050505] about-dark-section flex flex-col justify-center border-l border-white/5 relative overflow-hidden reveal-right">
           <div className="mb-6 sm:mb-8">
-            <p className="text-[#f2921d] text-xs sm:text-sm font-black uppercase tracking-[0.2em] mb-3 sm:mb-4">ANCHOR INITIATIVE →</p>
-            <p className="text-gray-500 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.3em] mb-2">National Launch — Chennai</p>
+            <p className="text-[#f2921d] text-xs sm:text-sm font-black uppercase tracking-[0.2em] mb-3 sm:mb-4">#SEMPORUTKALAI2047 →</p>
+            <p className="text-gray-500 text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.3em] mb-2">Foundation Vision Address</p>
             <p className="text-white font-black about-dark-date tracking-widest mb-6 sm:mb-8">25 January 2026</p>
           </div>
           <div className="mt-auto pt-6 sm:pt-8 border-t border-white/10">
             <h3 className="text-white about-dark-title font-black uppercase leading-tight tracking-tight mb-2">
-              Digital Knowledge Bank on
+              Presenting
             </h3>
             <p className="text-white about-dark-subtitle font-bold leading-tight">
-              Indian Medicinal Flora<br />& Aromatic Plants
+              #thesemporutkalaivision<br />A zeal for sustenance
             </p>
           </div>
         </div>
@@ -53,10 +53,10 @@ const About: React.FC = () => {
           <h2 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black uppercase tracking-tighter mb-8 sm:mb-10 md:mb-12 leading-none title-underline">ABOUT SLSRF</h2>
           <div className="space-y-6 sm:space-y-8 md:space-y-10 max-w-2xl mt-6 sm:mt-8">
             <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
-              <span className="text-[#f2921d] font-bold text-lg sm:text-xl md:text-2xl">Semporutkalai Life Science Research Foundation (SLSRF)</span> is a Section 8, not-for-profit organization established to build a nation's legacy through knowledge preservation, human empowerment, and environmental stewardship.
+              <span className="text-[#f2921d] font-bold text-lg sm:text-xl md:text-2xl">Semporutkalai Life Science Research Foundation (SLSRF)</span> is a non-profit foundation that operates at the convergence of science, society, and public policy, ensuring that research translates into actionable knowledge, institutional frameworks, and measurable real-world outcomes.
             </p>
             <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
-              Anchored in the philosophy of <em className="italic text-white">Semporul — for sustenance</em> — SLSRF works at the intersection of life sciences, traditional knowledge, technology, and sustainability. The foundation is committed to two national-interest domains: <span className="font-bold text-[#f2921d]">Social Development</span> and <span className="font-bold text-[#f2921d]">Environmental Conservation</span>.
+              Our work moves science beyond hypothesis and academic journals into systems and solutions that shape the nation's future. We are committed to building India's sustainable vision through research-driven responsibility.
             </p>
           </div>
         </div>

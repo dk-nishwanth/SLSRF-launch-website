@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
     }
   };
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden mb-2 sm:mb-3 md:mb-4 lg:mb-5">
       {/* Video Background - extends to navbar area */}
       <div className="absolute z-0 overflow-hidden" style={{ top: '-80px', left: 0, right: 0, height: 'calc(100vh + 80px)', width: '100%' }}>
         <video
@@ -20,20 +20,20 @@ const Hero: React.FC = () => {
           loop
           muted={isMuted}
           playsInline
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover"
           style={{
             width: '100%',
             height: '100%',
             objectFit: 'cover',
             transform: 'scale(1.25)',
             transformOrigin: 'center center',
-            filter: 'blur(3px) brightness(0.7)'
+            filter: 'brightness(0.8)'
           }}
         >
-          <source src="https://res.cloudinary.com/detnivsqb/video/upload/v1768571972/shorter_video_yaznah.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/detnivsqb/video/upload/v1768642753/video_for_header_q6bvj8.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        {/* Overlay for better text readability - darker and more prominent */}
+        {/* Black overlay coat for better text readability */}
         <div className="absolute inset-0 bg-black/60 z-10"></div>
       </div>
 
@@ -97,9 +97,11 @@ const Hero: React.FC = () => {
 
           {/* Tagline / Description */}
           <div className="max-w-4xl mx-auto border-t border-white/10 pt-8 sm:pt-10 md:pt-12 lg:pt-16 mt-6 md:mt-8 px-4 animate-slide-up delay-500">
-            <p className="hero-tagline text-white/80 font-light leading-relaxed tracking-wide italic">
-              Semporutkalai Life Science Research Foundation presents a <span className="text-[#f2921d] font-black not-italic px-1 sm:px-2">transformative initiative</span> <br className="hidden md:block" />
-              for knowledge preservation, human empowerment, and environmental stewardship.
+            <p className="text-white/90 font-light leading-relaxed tracking-wide italic mb-4 text-lg sm:text-xl md:text-2xl lg:text-3xl">
+              The Divine Launch of <span className="text-[#f2921d] font-black not-italic px-1 sm:px-2">Semporutkalai Life Science Research Foundation</span>
+            </p>
+            <p className="text-white/70 font-medium leading-relaxed tracking-wide text-base sm:text-lg md:text-xl lg:text-2xl">
+              <span className="text-[#f2921d] font-bold not-italic">From Research to Responsibility:</span> A Sustainable Vision for India
             </p>
           </div>
         </div>
