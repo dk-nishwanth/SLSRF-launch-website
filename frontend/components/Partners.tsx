@@ -19,14 +19,14 @@ const Partners: React.FC = () => {
             <p className="text-gray-500 uppercase tracking-[0.3em] sm:tracking-[0.5em] font-bold text-xs">Collaborating for a sustainable future</p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-xs sm:max-w-md md:max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 max-w-xs md:max-w-4xl mx-auto">
           {mainPartners.map((partner, index) => (
             <div 
               key={index} 
-              className="partner-card bg-white aspect-square flex flex-col items-center justify-center hover:shadow-2xl hover:scale-[1.05] transition-all group rounded-sm reveal-zoom p-2 sm:p-3 md:p-4"
+              className="partner-card bg-white aspect-square flex flex-col items-center justify-center hover:shadow-2xl hover:scale-[1.05] transition-all group rounded-sm reveal-zoom p-2 md:p-6"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-                <div className={`w-full flex items-center justify-center mb-1 sm:mb-2 grayscale group-hover:grayscale-0 transition-all duration-700 ${partner.name === 'SNA' ? 'h-4 sm:h-6 md:h-8' : 'h-3 sm:h-4 md:h-6'}`}>
+                <div className={`w-full flex items-center justify-center mb-1 md:mb-3 grayscale group-hover:grayscale-0 transition-all duration-700 ${partner.name === 'SNA' ? 'h-4 md:h-10' : 'h-3 md:h-8'}`}>
                     {partner.hasLogo ? (
                       <img 
                         src={partner.logo!} 
@@ -34,11 +34,11 @@ const Partners: React.FC = () => {
                         className="max-w-full max-h-full object-contain"
                       />
                     ) : (
-                      <span className="text-black font-black text-xs sm:text-sm md:text-base tracking-tighter uppercase text-center leading-none">{partner.name}</span>
+                      <span className="text-black font-black text-xs md:text-base tracking-tighter uppercase text-center leading-none">{partner.name}</span>
                     )}
                 </div>
-                <div className="w-full h-px bg-gray-100 mb-1 sm:mb-2"></div>
-                <p className="partner-type text-gray-400 uppercase font-bold tracking-widest text-center text-[8px] sm:text-[9px] md:text-xs">{partner.type}</p>
+                <div className="w-full h-px bg-gray-100 mb-1 md:mb-2"></div>
+                <p className="partner-type text-gray-400 uppercase font-bold tracking-widest text-center text-[8px] md:text-xs">{partner.type}</p>
             </div>
           ))}
         </div>
