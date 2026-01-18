@@ -5,47 +5,59 @@ const RollOfHonour: React.FC = () => {
     {
       name: 'Prof. Kamlesh Joshipura',
       role: 'Chief Guest',
-      designation: 'Vice-Chancellor of Saurashtra University, Rajkot'
-    },
-    {
-      name: 'Mrs. Bhavna Joshipura',
-      role: 'Guest of Honour',
-      designation: 'Distinguished Guest'
-    },
-    {
-      name: 'Mr. Kishore Kumar KRM IPS (Retd)',
-      role: 'Guest of Honour',
-      designation: 'Director, Ayush Hospitals'
+      designation: 'Former Vice Chancellor, Sourashtra University, Rajkhot. Founder Vice Chancellor IITE, Chairperson, Legal Research Foundation'
     }
   ];
 
-  const advisoryBoard = [
-    { name: 'Thiru. R Srinivasan', role: 'Chairman, KS Rangasamy Educational Institutions' },
+  const guestsOfHonor = [
+    {
+      name: 'Thiru. R Srinivasan',
+      role: 'Guest of Honour',
+      designation: 'Chairman, KS Rangasamy Educational Institutions'
+    },
+    {
+      name: 'Dr. Bhavna K. Joshipura',
+      role: 'Guest of Honour',
+      designation: 'First Lady Major of Rajkot, Sr.Adv - Gujarat High Court'
+    },
+    {
+      name: 'K R M Kishore Kumar, IPS (Retd. DGP)',
+      role: 'Guest of Honour',
+      designation: 'Director (Finance & Projects), Aayush Hospitals'
+    }
+  ];
+
+  const invitees = [
     { name: 'Dr. G.V. Shankar', role: 'IAS (Retd), Industrialist' },
-    { name: 'Dr. William Selvamurthy', role: 'President, Amity Science, Technology and Innovation Foundation' },
+    { name: 'Dr. W. Selvamurthy, Ph.D., D.Sc. FAMS, FABMS, FIMSA, FIANS, FIAY', role: 'President, ASTIF, Director General, Amity Directorate of Science & Innovation, Chancellor, Amity University Chhattisgarh and Chair Professor for Life Sciences (Former Distinguished Scientist and Chief Controller R&D (LS), DRDO)' },
     { name: 'Dr. Vijendra Tiwari', role: 'Chairman - National Biodiversity Authority' },
     { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India' },
-    { name: 'Dr. V.V. Sadamate', role: 'Former Adviser, Agriculture - Planning Commission' },
+    { name: 'Dr. V.V. SADAMATE', role: 'AGRIL. EXTENSION SPECIALIST & FORMER ADVISER (AGRI.), PLANNING COMMISSION, GOI' },
     { name: 'Dr. S.P. Thyagarajan', role: 'Former Vice Chancellor - University of Madras' },
     { name: 'Dr. Yogita Shukla', role: 'CEO, AddGEO Foundation' },
     { name: 'Dr. Murugeswaran R', role: 'Deputy Advisor - National Medicinal Plants Board' },
     { name: 'Dr. Chinnaiyah', role: 'Pro- Vice Chancellor, Lingaya University' },
-    { name: 'Dr. Vincent S', role: 'Panel Expert' },
-    { name: 'Ms. Shoba Menon', role: 'Nizhalgal, NGO' },
+    { name: 'Dr. Vincent', role: 'Secretary - Tamil Nadu Council for Science and Technology' },
+    { name: 'Ms. Shoba Menon', role: 'Founder, Nizhalgal, NGO' },
     { name: 'Dr. Venkateshwaran', role: 'CEO - Proofile.in' },
-    { name: 'Dr. Shriraam Shekher S.R', role: 'President, International Mediation Organization' },
-    { name: 'Dr. R Sridharan', role: 'Advisory Board Member' },
-    { name: 'Dr. M Kolappapillai', role: 'President, World Siddha Trust' },
+    { name: 'Dr. Kirthi Kempiah', role: 'Dalhousie University, Nova Scotia, Canada' }
+  ];
+
+  const advisoryBoard = [
+    { name: 'Dr. S R Shriraam Shekher', role: 'President, International Mediation Organisation' },
+    { name: 'Dr. R. SRIDHARAN, B.Sc., M.D (Siddha)', role: 'Senior Chief Medical Officer Former Director (Ayush) cum CEO (SMPB) GOVT. OF PUDUCHERRY' },
+    { name: 'Dr. M Kolappa Pillai', role: 'Founder Trustee World Siddha Trust' },
     { name: 'Dr. D Narasimhan', role: 'Senior Ethnobotanist' },
-    { name: 'Mr. KU Sirinivasan', role: 'MD - M/s Connecting Dots' },
-    { name: 'Mr. GVS Suryanarayana', role: 'Advisory Board Member' }
+    { name: 'Shri. KU Srinivasan', role: 'Managing Partner M/s Connecting DOTS' },
+    { name: 'Shri. G V S Suryanarayana', role: 'Management Consultant' },
+    { name: 'Mr. Tamizh Vendan M, IRS', role: 'Addl Commissioner Customs (R) Retd' },
   ];
 
   const patrons = [
-    { name: 'Dr. Kotur P B', role: 'Global Goodwill Ambassador' },
-    { name: 'Prof. Abdul Kareem', role: 'Patron' },
-    { name: 'Dr. Manikandavelu', role: 'Patron' },
-    { name: 'Mr. Rajamurugan', role: 'Patron' }
+    { name: 'Dr. P B Kotur', role: 'Global Goodwill Ambassador' },
+    { name: 'Dr. M Abdul Kareem', role: 'Professor - Trans - Disciplinary University' },
+    { name: 'Dr. D Manikandavelu', role: 'Founder - Director - Pranahaa Enterprises' },
+    { name: 'Mr. Rajamurugan R', role: 'Director - Adhithi Bio Earth Solution Pvt Ltd' }
   ];
 
   return (
@@ -68,15 +80,15 @@ const RollOfHonour: React.FC = () => {
         <div className="mb-20 sm:mb-24 reveal-left">
           <div className="text-center mb-12">
             <h3 className="text-[#f2921d] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
-              CHIEF GUESTS
+              CHIEF GUEST
             </h3>
             <div className="w-16 h-0.5 bg-[#f2921d] mx-auto"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
+          <div className="flex justify-center">
             {chiefGuests.map((guest, index) => (
               <div 
                 key={index}
-                className="group text-center reveal-zoom"
+                className="group text-center reveal-zoom max-w-md"
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
                 <div className="relative bg-gradient-to-br from-[#0a0a0a] to-black border border-[#f2921d]/20 rounded-lg p-8 sm:p-10 hover:border-[#f2921d]/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(249,146,29,0.2)]">
@@ -100,6 +112,79 @@ const RollOfHonour: React.FC = () => {
                       {guest.designation}
                     </p>
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Guests of Honor - Premium Layout */}
+        <div className="mb-20 sm:mb-24 reveal-right">
+          <div className="text-center mb-12">
+            <h3 className="text-[#f2921d] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
+              GUESTS OF HONOR
+            </h3>
+            <div className="w-16 h-0.5 bg-[#f2921d] mx-auto"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
+            {guestsOfHonor.map((guest, index) => (
+              <div 
+                key={index}
+                className="group text-center reveal-zoom"
+                style={{ transitionDelay: `${index * 200}ms` }}
+              >
+                <div className="relative bg-gradient-to-br from-[#0a0a0a] to-black border border-[#f2921d]/20 rounded-lg p-8 sm:p-10 hover:border-[#f2921d]/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(249,146,29,0.2)] h-full flex flex-col">
+                  {/* Decorative corner elements */}
+                  <div className="absolute top-3 left-3 w-4 h-4 border-l-2 border-t-2 border-[#f2921d]/40"></div>
+                  <div className="absolute top-3 right-3 w-4 h-4 border-r-2 border-t-2 border-[#f2921d]/40"></div>
+                  <div className="absolute bottom-3 left-3 w-4 h-4 border-l-2 border-b-2 border-[#f2921d]/40"></div>
+                  <div className="absolute bottom-3 right-3 w-4 h-4 border-r-2 border-b-2 border-[#f2921d]/40"></div>
+                  
+                  <div className="flex flex-col flex-1">
+                    <div className="w-12 h-12 mx-auto bg-[#f2921d]/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-[#f2921d]/20 transition-colors">
+                      <div className="w-6 h-6 bg-[#f2921d] rounded-full"></div>
+                    </div>
+                    <h4 className="text-white text-lg sm:text-xl font-black tracking-tight mb-2 leading-tight flex-shrink-0">
+                      {guest.name}
+                    </h4>
+                    <p className="text-[#f2921d] text-sm font-bold uppercase tracking-widest mb-3 flex-shrink-0">
+                      {guest.role}
+                    </p>
+                    <p className="text-gray-400 text-xs sm:text-sm font-medium leading-relaxed flex-1">
+                      {guest.designation}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Invitees - Elegant List */}
+        <div className="mb-20 sm:mb-24 reveal-left">
+          <div className="text-center mb-12">
+            <h3 className="text-[#f2921d] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
+              EMINENT INVITEES
+            </h3>
+            <div className="w-16 h-0.5 bg-[#f2921d] mx-auto"></div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            {invitees.map((member, index) => (
+              <div 
+                key={index}
+                className="group flex items-center gap-4 bg-[#0a0a0a]/50 border border-white/5 rounded-lg p-4 hover:border-[#f2921d]/30 hover:bg-[#0a0a0a] transition-all duration-300 reveal-zoom"
+                style={{ transitionDelay: `${index * 30}ms` }}
+              >
+                <div className="shrink-0">
+                  <div className="w-2 h-2 bg-[#f2921d] rounded-full group-hover:scale-125 transition-transform"></div>
+                </div>
+                <div className="min-w-0">
+                  <h4 className="text-white text-sm sm:text-base font-bold tracking-tight mb-1 leading-tight truncate">
+                    {member.name}
+                  </h4>
+                  <p className="text-gray-400 text-xs font-medium leading-tight line-clamp-2">
+                    {member.role}
+                  </p>
                 </div>
               </div>
             ))}
@@ -141,7 +226,7 @@ const RollOfHonour: React.FC = () => {
         <div className="reveal-zoom">
           <div className="text-center mb-12">
             <h3 className="text-[#f2921d] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
-              PATRONS
+              Patrons
             </h3>
             <div className="w-16 h-0.5 bg-[#f2921d] mx-auto"></div>
           </div>
@@ -156,7 +241,7 @@ const RollOfHonour: React.FC = () => {
                   <div className="w-8 h-8 mx-auto bg-[#f2921d]/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-[#f2921d]/30 transition-colors">
                     <div className="w-3 h-3 bg-[#f2921d] rounded-full"></div>
                   </div>
-                  <h4 className="text-white text-sm sm:text-base font-bold uppercase tracking-tight mb-2 leading-tight">
+                  <h4 className="text-white text-sm sm:text-base font-bold tracking-tight mb-2 leading-tight">
                     {patron.name}
                   </h4>
                   <p className="text-gray-400 text-xs font-medium">

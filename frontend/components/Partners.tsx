@@ -27,7 +27,7 @@ const Partners: React.FC = () => {
             >
                 {/* Logo container with fixed height for consistency */}
                 <div className="w-full flex items-center justify-center flex-1">
-                  <div className={`flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-700 ${
+                  <div className={`flex items-center justify-center transition-all duration-700 ${
                     partner.name === 'SNA' ? 'h-12 md:h-24' : 
                     partner.name === 'BRiX Network' ? 'h-10 md:h-20' : 
                     'h-8 md:h-16'
@@ -36,10 +36,10 @@ const Partners: React.FC = () => {
                         <img 
                           src={partner.logo!} 
                           alt={partner.name} 
-                          className="max-w-full max-h-full object-contain"
+                          className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
                         />
                       ) : (
-                        <span className="text-black font-black text-sm md:text-xl tracking-tighter uppercase text-center leading-none">{partner.name}</span>
+                        <span className="text-black font-black text-sm md:text-xl tracking-tighter uppercase text-center leading-none filter grayscale group-hover:grayscale-0 transition-all duration-500">{partner.name}</span>
                       )}
                   </div>
                 </div>

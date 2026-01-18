@@ -10,24 +10,19 @@ const Pillars: React.FC = () => {
 
   const pillars = [
     {
-      title: 'LIFE SCIENCE RESEARCH & TRANSLATION',
-      desc: 'Bridging laboratory discoveries with real-world applications for societal benefit and national development. Our research translates scientific breakthroughs into practical solutions that address India\'s most pressing challenges.'
+      title: 'LIFE SCIENCE RESEARCH & TRANSLATION'
     },
     {
-      title: 'NOETIC SCIENCE & HUMAN CONSCIOUSNESS RESEARCH',
-      desc: 'Exploring the intersection of consciousness and scientific inquiry to understand human potential and awareness. We investigate the deeper aspects of human experience and their role in scientific discovery.'
+      title: 'NOETIC SCIENCE & HUMAN CONSCIOUSNESS RESEARCH'
     },
     {
-      title: 'ENVIRONMENTAL & ECOLOGICAL SUSTAINABILITY',
-      desc: 'Developing sustainable solutions for environmental challenges and ecological preservation initiatives. Our work focuses on creating harmony between human development and environmental conservation.'
+      title: 'ENVIRONMENTAL & ECOLOGICAL SUSTAINABILITY'
     },
     {
-      title: 'KNOWLEDGE INFRASTRUCTURE & DIGITAL REPOSITORIES',
-      desc: 'Building comprehensive digital knowledge systems for research, education, and policy-making. We create accessible platforms that preserve and disseminate India\'s scientific and traditional knowledge.'
+      title: 'KNOWLEDGE INFRASTRUCTURE & DIGITAL REPOSITORIES'
     },
     {
-      title: 'ACADEMIA–INDUSTRY–GOVERNMENT INTEGRATION',
-      desc: 'Fostering collaboration across sectors for translating research into actionable national solutions. We bridge the gap between academic research, industrial application, and government policy implementation.'
+      title: 'ACADEMIA–INDUSTRY–GOVERNMENT INTEGRATION'
     }
   ];
 
@@ -195,28 +190,24 @@ const Pillars: React.FC = () => {
                 className="carousel-item w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.33%-1rem)] shrink-0 h-full"
                 style={{ scrollSnapAlign: 'start' }}
               >
-                <div className="h-[450px] sm:h-[480px] md:h-[500px] bg-[#0c0c0c] border border-white/5 p-6 sm:p-8 md:p-10 lg:p-14 flex flex-col justify-between hover:border-[#f2921d]/30 transition-all duration-500 relative overflow-hidden group/card">
+                <div className="h-[280px] sm:h-[300px] md:h-[320px] bg-[#0c0c0c] border border-white/5 p-6 sm:p-8 md:p-10 flex flex-col justify-between hover:border-[#f2921d]/30 transition-all duration-500 relative overflow-hidden group/card">
                   
                   {/* Large background number - More visible */}
-                  <div className="absolute top-2 sm:top-4 right-2 sm:right-4 text-[8rem] sm:text-[9rem] md:text-[10rem] font-black text-white/[0.08] leading-none select-none group-hover/card:text-[#f2921d]/[0.12] transition-colors duration-700 pointer-events-none">
+                  <div className="absolute top-2 sm:top-4 right-2 sm:right-4 text-[6rem] sm:text-[7rem] md:text-[8rem] font-black text-white/[0.08] leading-none select-none group-hover/card:text-[#f2921d]/[0.12] transition-colors duration-700 pointer-events-none">
                     {index + 1}
                   </div>
 
-                  <div className="relative z-10">
+                  <div className="relative z-10 flex-1 flex flex-col justify-center">
                     {/* Small orange bar top left */}
-                    <div className="w-8 sm:w-10 h-1 sm:h-1.5 bg-[#f2921d] mb-8 sm:mb-10 md:mb-12 group-hover/card:w-16 sm:group-hover/card:w-20 transition-all duration-700"></div>
+                    <div className="w-8 sm:w-10 h-1 sm:h-1.5 bg-[#f2921d] mb-6 sm:mb-8 group-hover/card:w-16 sm:group-hover/card:w-20 transition-all duration-700"></div>
                     
-                    <h4 className="text-white text-lg sm:text-xl md:text-2xl font-black uppercase tracking-tight mb-6 sm:mb-7 md:mb-8 leading-tight max-w-[90%]">
+                    <h4 className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-tight leading-tight max-w-[90%]">
                       {pillar.title}
                     </h4>
-                    
-                    <p className="text-gray-500 text-sm sm:text-base md:text-lg leading-relaxed font-medium">
-                      {pillar.desc}
-                    </p>
                   </div>
 
                   {/* Footer - SLSRF 2026 and Arrow */}
-                  <div className="relative z-10 pt-6 sm:pt-8 border-t border-white/5 flex justify-between items-center group-hover/card:border-[#f2921d]/10 transition-colors">
+                  <div className="relative z-10 pt-4 sm:pt-6 border-t border-white/5 flex justify-between items-center group-hover/card:border-[#f2921d]/10 transition-colors">
                     <span className="text-[10px] sm:text-[11px] text-gray-600 font-black uppercase tracking-[0.25em] sm:tracking-[0.3em]">SLSRF 2026</span>
                     <div className="flex items-center gap-2 text-[#f2921d] group-hover/card:gap-3 sm:group-hover/card:gap-4 transition-all duration-300">
                       <i className="fas fa-arrow-right text-xs"></i>

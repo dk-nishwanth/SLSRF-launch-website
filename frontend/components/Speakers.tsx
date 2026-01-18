@@ -11,18 +11,18 @@ const Speakers: React.FC = () => {
       img: '/jc.png'
     },
     {
-      name: 'Prof. Kamlesh Joshipura',
+      name: 'Dr. Kamlesh Joshipura',
       role: 'Chief Guest Address',
-      company: 'Vice-Chancellor of Saurashtra University, Rajkot',
+      company: 'Former Vice Chancellor, Sourashtra University, Rajkhot. Founder Vice Chancellor IITE, Chairperson, Legal Research Foundation',
       speechTitle: '',
-      img: '/Prof. Kamlesh Joshipura.jpeg'
+      img: '/Kamlesh_Joshipura.jpg'
     },
     {
-      name: 'Mr Kishore Kumar KRM IPS',
+      name: 'K R M Kishore Kumar, IPS (Retd. DGP)',
       role: '',
-      company: 'Director, Ayush Hospitals',
+      company: 'Director (Finance & Projects) Director, Aayush Hospitals',
       speechTitle: 'Preparing Leaders through a Value-Driven DNA Culture (Like - Mindedness, Sense of Belonging , Willingness to Share, Accountability, Integrity, Inclusiveness)',
-      img: '/Mr. K R M Kishore Kumar.png'
+      img: '/K R M Kishore Kumar, IPS (Retd. DGP).jpeg'
     },
     {
       name: 'Thiru. R Srinivasan',
@@ -32,32 +32,11 @@ const Speakers: React.FC = () => {
       img: '/Thiru. R Srinivasan.jpeg'
     },
     {
-      name: 'Dr. Shriraam Shekher S.R',
+      name: 'Dr. S R Shriraam Shekher',
       role: '',
-      company: 'President, International Media Organisation',
+      company: 'President - International Mediation Organisation',
       speechTitle: 'The Need for S.T.E.M Innovations Addressing National Priorities',
-      img: '/Dr. Shriraam Shekher S.R.jpeg'
-    },
-    {
-      name: 'Dr. Yogita Shukla',
-      role: '',
-      company: 'CEO, AddGEO Foundation',
-      speechTitle: '',
-      img: '/Dr. Yogita Shukla.jpeg'
-    },
-    {
-      name: 'Dr. Murugeswaran R',
-      role: '',
-      company: 'Dept Advisor, NMPB',
-      speechTitle: '',
-      img: '/Dr. Murugeswaran R.jpeg'
-    },
-    {
-      name: 'Dr. Vincent S',
-      role: '',
-      company: 'Panel Expert',
-      speechTitle: '',
-      img: '/Dr. Vincent S.jpeg'
+      img: '/Dr. S R Shriraam Shekher.jpeg'
     },
     {
       name: 'Dr. Kotur P B',
@@ -72,14 +51,35 @@ const Speakers: React.FC = () => {
       company: 'CEO, proofile.in',
       speechTitle: 'Collaborative Intelligence: Industry–Academia Convergence for a Modern Nation',
       img: '/Mr. S V Venkatesh, CEO - Proofile.in.jpeg'
+    },
+    {
+      name: 'Dr. Yogita Shukla',
+      role: '',
+      company: 'CEO, AddGEO Foundation',
+      speechTitle: '',
+      img: '/Dr. Yogita Shukla.jpg'
+    },
+    {
+      name: 'Dr. R Murugeswaran',
+      role: '',
+      company: 'Deputy Advisor (Medicinal Plant\'s) National Medicine Plants Board',
+      speechTitle: '',
+      img: '/Dr. R Murugeswaran.jpeg'
+    },
+    {
+      name: 'Dr. Vincent',
+      role: '',
+      company: 'Secretary - Tamil Nadu Council for Science and Technology',
+      speechTitle: '',
+      img: '/Dr. Vincent.jpeg'
     }
   ];
 
   const panelSpeakers = [
-    { name: 'Dr. Selvamurthy W', role: 'President, ASTIF', img: '/Dr. Selvamurthy W.jpeg' },
-    { name: 'Dr. Shankar G V', role: 'President & CEO, Global Connect Inc', img: '/Dr. Shankar G V.jpeg' },
-    { name: 'Dr. Sadamate V V', role: 'Former Adviser Agriculture, Planning Commission', img: '/Dr. Sadamate V V.jpeg' },
-    { name: 'Dr. Thyagarajan S P', role: 'Former Vice Chancellor, Madras University', img: '/Dr. Thyagarajan S P.jpeg' },
+    { name: 'Dr. Selvamurthy W', role: 'President, ASTIF', img: '/Dr_W_Selvamurthy.jpg' },
+    { name: 'Dr. Shankar G V', role: 'President & CEO, Global Connect Inc', img: '/Shankar_GV.jpg' },
+    { name: 'Dr. Sadamate V V', role: 'Former Adviser Agriculture, Planning Commission', img: '/VV_Sadamate.jpg' },
+    { name: 'Dr. Vijay Mishra', role: 'Director - S.T.E.M, Q DoTZ S.T.E.M India Pvt Ltd', img: '/Dr. Vijay Mishra.jpeg' },
     { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India', img: '/Dr. Sudharsan Suryawanshi.jpeg' }
   ];
 
@@ -109,9 +109,12 @@ const Speakers: React.FC = () => {
                     <img 
                       src={speaker.img} 
                       alt={speaker.name} 
-                      className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ${
-                        speaker.name === 'Thiru. Jeyachandran Srinivasan' || speaker.name === 'Dr. Venkateshwaran' ? 'grayscale' : ''
-                      }`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 filter grayscale-[0.3] group-hover:grayscale-0"
+                      style={{
+                        imageRendering: 'crisp-edges'
+                      } as React.CSSProperties}
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="w-full h-full bg-gray-800 flex items-center justify-center">
@@ -172,7 +175,12 @@ const Speakers: React.FC = () => {
                     <img 
                       src={speaker.img}
                       alt={speaker.name} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 filter grayscale-[0.3] group-hover:grayscale-0"
+                      style={{
+                        imageRendering: 'crisp-edges'
+                      } as React.CSSProperties}
+                      loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="w-full h-full bg-gray-800 flex items-center justify-center">

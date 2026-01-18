@@ -15,7 +15,7 @@ const Highlights: React.FC = () => {
         <div className="mb-12 sm:mb-16 md:mb-20 reveal">
           <div className="relative inline-block">
             <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[7.5rem] font-black uppercase tracking-tighter leading-tight">
-              <span className="text-[#f2921d]">HIGHLIGHTS</span>
+              HIGH<span className="text-[#f2921d]">LIGHTS</span>
             </h2>
             <div className="h-1 sm:h-1.5 md:h-2 bg-[#f2921d] w-1/4 mt-3 sm:mt-4 md:mt-6"></div>
           </div>
@@ -30,7 +30,7 @@ const Highlights: React.FC = () => {
               <img 
                 src="/WhatsApp Image 2026-01-08 at 6.43.57 AM.jpg" 
                 alt="Foundation Launch Event - Vision Presentation and Stakeholder Collaboration" 
-                className="w-full h-full object-cover grayscale brightness-50 contrast-125 transition-transform duration-1000 group-hover:scale-105"
+                className="w-full h-full object-cover brightness-75 contrast-125 transition-transform duration-1000 group-hover:scale-105"
               />
               {/* Dark overlay for better visual effect */}
               <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>

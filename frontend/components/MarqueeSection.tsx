@@ -55,28 +55,33 @@ const MarqueeSection: React.FC = () => {
       <div className="text-center mb-16 reveal">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6">
           {/* Main tagline with enhanced typography */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 md:gap-12">
-            <div className="flex items-center gap-3">
-              <div className="w-8 sm:w-12 h-px bg-[#f2921d]"></div>
-              <h3 className="marquee-title text-white font-black uppercase tracking-tight">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+            
+            {/* Left decorative line */}
+            <div className="w-12 sm:w-16 md:w-20 h-px bg-[#f2921d] hidden sm:block"></div>
+            
+            {/* Text content container - perfectly centered */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8">
+              <h3 className="marquee-title text-[#f2921d] font-black uppercase tracking-tight text-center">
                 Driving social impact
               </h3>
-            </div>
-            
-            <div className="flex items-center gap-3">
-              <div className="w-2 h-2 bg-white/40 rounded-full hidden sm:block"></div>
-              <h3 className="marquee-title text-white font-bold uppercase tracking-tight">
-                Acceleration Environment innovation
+              
+              <div className="w-8 sm:w-12 h-px bg-[#f2921d] hidden sm:block"></div>
+              
+              <h3 className="marquee-title text-[#f2921d] font-bold uppercase tracking-tight text-center">
+                Accelerating Environmental innovation
               </h3>
-            </div>
-            
-            <div className="flex items-center gap-3">
-              <div className="w-2 h-2 bg-white/40 rounded-full hidden sm:block"></div>
-              <h3 className="marquee-title text-gray-300 font-bold uppercase tracking-tight">
+              
+              <div className="w-8 sm:w-12 h-px bg-[#f2921d] hidden sm:block"></div>
+              
+              <h3 className="marquee-title text-[#f2921d] font-bold uppercase tracking-tight text-center">
                 Sustenance
               </h3>
-              <div className="w-8 sm:w-12 h-px bg-[#f2921d]"></div>
             </div>
+            
+            {/* Right decorative line */}
+            <div className="w-12 sm:w-16 md:w-20 h-px bg-[#f2921d] hidden sm:block"></div>
+            
           </div>
           
           {/* Subtitle */}

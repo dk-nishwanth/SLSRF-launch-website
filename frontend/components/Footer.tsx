@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
       {/* Massive Contact Heading */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 mb-10 sm:mb-12 md:mb-16 reveal">
         <h2 className="footer-title text-white font-black uppercase tracking-tighter leading-none">
-          RSVP.
+          RSVP
         </h2>
       </div>
 
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 md:gap-20 lg:gap-24 items-start">
           {/* Office Info */}
           <div className="reveal">
-            <h4 className="footer-section-title text-[#f2921d] font-black uppercase tracking-[0.2em] mb-8 sm:mb-10 md:mb-12 border-l-4 border-[#f2921d] pl-4 sm:pl-6">Contact Person</h4>
+            <h4 className="footer-section-title text-[#f2921d] font-black uppercase tracking-[0.2em] mb-8 sm:mb-10 md:mb-12 border-l-4 border-[#f2921d] pl-4 sm:pl-6">Ms. Radha R </h4>
             <div className="space-y-8 sm:space-y-10 md:space-y-12">
               
               <div className="flex gap-4 sm:gap-6 group">
@@ -73,7 +73,6 @@ const Footer: React.FC = () => {
                     <i className="fas fa-phone-alt text-sm sm:text-base"></i>
                 </div>
                 <div className="flex flex-col">
-                    <p className="text-gray-300 font-medium text-base sm:text-lg leading-snug">Ms. Radha</p>
                     <p className="text-gray-300 font-bold text-xl sm:text-2xl tracking-tight leading-none">+91 70930 01790</p>
                 </div>
               </div>

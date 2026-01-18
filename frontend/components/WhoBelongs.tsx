@@ -52,7 +52,7 @@ const WhoBelongs: React.FC = () => {
           <img 
             src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2070&auto=format&fit=crop" 
             alt="Research Team Collaboration and Knowledge Sharing" 
-            className="w-full h-full object-cover grayscale brightness-[0.35] transition-transform duration-[2s] group-hover:scale-110"
+            className="w-full h-full object-cover brightness-75 transition-transform duration-[2s] group-hover:scale-110"
           />
           {/* Huge COLLABORATION text overlay */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none px-4">
