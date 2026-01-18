@@ -36,7 +36,7 @@ const Frontier: React.FC = () => {
                 alt="Traditional Medicinal Plants and Biodiversity" 
                 className="w-full h-full object-cover grayscale brightness-50 contrast-125 transition-transform duration-1000 group-hover:scale-105"
               />
-              {/* Dark overlay for better text contrast */}
+              {/*  Dark overlay for better text contrast */}
               <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
               {/* Massive HUMANITY text overlay */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
