@@ -1,7 +1,14 @@
 import React from 'react';
 
+interface Guest {
+  name: string;
+  role: string;
+  designation: string;
+  title?: string;
+}
+
 const RollOfHonour: React.FC = () => {
-  const chiefGuests = [
+  const chiefGuests: Guest[] = [
     {
       name: 'Prof. Kamlesh Joshipura',
       role: 'Chief Guest',
@@ -9,7 +16,7 @@ const RollOfHonour: React.FC = () => {
     }
   ];
 
-  const guestsOfHonor = [
+  const guestsOfHonor: Guest[] = [
     {
       name: 'Thiru. R Srinivasan',
       role: 'Guest of Honour',
@@ -21,8 +28,9 @@ const RollOfHonour: React.FC = () => {
       designation: 'First Lady Major of Rajkot, Sr.Adv - Gujarat High Court'
     },
     {
-      name: 'Mr. K R M Kishore Kumar, IPS (Retd. DGP)',
+      name: 'Mr. K R M Kishore Kumar',
       role: 'Guest of Honour',
+      title: 'IPS\n(Retd. DGP)',
       designation: 'Director (Finance & Projects), Aayush Hospitals'
     }
   ];
@@ -146,6 +154,11 @@ const RollOfHonour: React.FC = () => {
                     </div>
                     <h4 className="text-white text-lg sm:text-xl font-black tracking-tight mb-2 leading-tight flex-shrink-0">
                       {guest.name}
+                      {guest.title && (
+                        <span className="block text-base sm:text-lg font-semibold text-[#f2921d] mt-1 whitespace-pre-line">
+                          {guest.title}
+                        </span>
+                      )}
                     </h4>
                     <p className="text-[#f2921d] text-sm font-bold uppercase tracking-widest mb-3 flex-shrink-0">
                       {guest.role}

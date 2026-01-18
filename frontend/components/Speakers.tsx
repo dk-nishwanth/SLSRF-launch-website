@@ -18,9 +18,9 @@ const Speakers: React.FC = () => {
       img: '/Kamlesh_Joshipura.jpg'
     },
     {
-      name: 'K R M Kishore Kumar, IPS (Retd. DGP)',
-      role: '',
-      company: 'Director (Finance & Projects) Director, Aayush Hospitals',
+      name: 'Mr. K R M Kishore Kumar',
+      role: 'IPS\n(Retd. DGP)',
+      company: 'Director (Finance & Projects), Aayush Hospitals',
       speechTitle: 'Preparing Leaders through a Value-Driven DNA Culture (Like - Mindedness, Sense of Belonging , Willingness to Share, Accountability, Integrity, Inclusiveness)',
       img: '/K R M Kishore Kumar, IPS (Retd. DGP).jpeg'
     },
@@ -46,7 +46,7 @@ const Speakers: React.FC = () => {
       img: '/Dr. Kotur P B.jpeg?v=2'
     },
     {
-      name: 'Dr. Venkateshwaran',
+      name: 'Mr. S\nV  Venkatesh',
       role: '',
       company: 'CEO, proofile.in',
       speechTitle: 'Collaborative Intelligence: Industry–Academia Convergence for a Modern Nation',
