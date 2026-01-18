@@ -12,9 +12,9 @@ const Speakers: React.FC = () => {
     },
     {
       name: 'Prof. Kamlesh Joshipura',
-      role: '',
+      role: 'Chief Guest Address',
       company: 'Vice-Chancellor of Saurashtra University, Rajkot',
-      speechTitle: 'To be decided',
+      speechTitle: '',
       img: '/Prof. Kamlesh Joshipura.jpeg'
     },
     {
@@ -42,21 +42,21 @@ const Speakers: React.FC = () => {
       name: 'Dr. Yogita Shukla',
       role: '',
       company: 'CEO, AddGEO Foundation',
-      speechTitle: 'To be decided',
+      speechTitle: '',
       img: '/Dr. Yogita Shukla.jpeg'
     },
     {
       name: 'Dr. Murugeswaran R',
       role: '',
       company: 'Dept Advisor, NMPB',
-      speechTitle: 'To be decided',
+      speechTitle: '',
       img: '/Dr. Murugeswaran R.jpeg'
     },
     {
       name: 'Dr. Vincent S',
       role: '',
       company: 'Panel Expert',
-      speechTitle: 'To be decided',
+      speechTitle: '',
       img: '/Dr. Vincent S.jpeg'
     },
     {
@@ -100,7 +100,7 @@ const Speakers: React.FC = () => {
             {keynoteSpeakers.map((speaker, index) => (
               <div 
                 key={index} 
-                className="speaker-card group bg-[#0a0a0a] border border-white/5 rounded-lg overflow-hidden hover:border-[#f2921d]/50 transition-all duration-500 reveal-zoom" 
+                className="speaker-card group bg-[#0a0a0a] border border-white/5 rounded-lg overflow-hidden hover:border-[#f2921d]/50 transition-all duration-500 reveal-zoom flex flex-col" 
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 {/* Speaker Image */}
@@ -124,8 +124,8 @@ const Speakers: React.FC = () => {
                 </div>
                 
                 {/* Speaker Info */}
-                <div className="speaker-card p-4">
-                  <h4 className="speaker-name text-white font-black uppercase tracking-tight mb-1 leading-tight line-clamp-2">
+                <div className="speaker-card p-4 flex-1 flex flex-col">
+                  <h4 className="speaker-name text-white font-black uppercase tracking-tight mb-1 leading-tight">
                     {speaker.name}
                   </h4>
                   {speaker.role && (
@@ -133,14 +133,16 @@ const Speakers: React.FC = () => {
                       {speaker.role}
                     </p>
                   )}
-                  <p className="text-gray-500 text-[9px] uppercase font-bold tracking-wide leading-tight line-clamp-2 mb-2">
+                  <p className="text-gray-500 text-[9px] uppercase font-bold tracking-wide leading-tight mb-2">
                     {speaker.company}
                   </p>
-                  <div className="border-t border-white/10 pt-2 mt-2">
-                    <p className="text-gray-400 text-[10px] sm:text-xs font-medium leading-tight line-clamp-2">
-                      <span className="text-[#f2921d] font-bold">Title:</span> {speaker.speechTitle}
-                    </p>
-                  </div>
+                  {speaker.speechTitle && (
+                    <div className="border-t border-white/10 pt-2 mt-auto">
+                      <p className="text-gray-400 text-[10px] sm:text-xs font-medium leading-tight">
+                        <span className="text-[#f2921d] font-bold">Title:</span> {speaker.speechTitle}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -184,10 +186,10 @@ const Speakers: React.FC = () => {
                 
                 {/* Speaker Info - Compact */}
                 <div className="p-3">
-                  <h4 className="text-white text-xs sm:text-sm font-black uppercase tracking-tight mb-1 leading-tight line-clamp-2">
+                  <h4 className="text-white text-xs sm:text-sm font-black uppercase tracking-tight mb-1 leading-tight">
                     {speaker.name}
                   </h4>
-                  <p className="text-gray-400 text-[10px] sm:text-xs font-medium leading-tight line-clamp-2">
+                  <p className="text-gray-400 text-[10px] sm:text-xs font-medium leading-tight">
                     {speaker.role}
                   </p>
                 </div>

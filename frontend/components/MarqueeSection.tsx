@@ -5,12 +5,9 @@ const MarqueeSection: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "/WhatsApp Image 2025-12-05 at 16.26.26_02490540.jpg",
-    "/WhatsApp Image 2025-12-22 at 6.58.39 PM (2).jpg", 
     "/WhatsApp Image 2026-01-08 at 6.36.12 AM (1) (1).jpg",
     "/WhatsApp Image 2026-01-08 at 6.39.05 AM (1).jpg",
     "/WhatsApp Image 2026-01-08 at 6.46.12 AM.jpg",
-    "/IMG_8730.JPG",
     "/IMG_8734.JPG",
     "/IMG_8739.JPG"
   ];

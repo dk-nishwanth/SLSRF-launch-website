@@ -3,7 +3,7 @@ import React from 'react';
 const Partners: React.FC = () => {
   const mainPartners = [
     { name: 'BRiX Network', type: 'Enablement partner', logo: '/BRIX NEW.png', hasLogo: true },
-    { name: 'Q DoTZ', type: 'Environment Hearing partner', logo: '/Quantum-dotz-logo.png', hasLogo: true },
+    { name: 'Q DoTZ', type: 'Environmenteering partner', logo: '/Quantum-dotz-logo.png', hasLogo: true },
     { name: 'SNA', type: 'Industry Academic Partner', logo: '/Brand-Logo.jpg', hasLogo: true },
     { name: 'Marginz', type: 'Technology Partner', logo: '/marginz logo.jpg', hasLogo: true }
   ];

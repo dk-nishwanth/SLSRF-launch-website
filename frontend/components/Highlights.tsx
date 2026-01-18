@@ -28,7 +28,7 @@ const Highlights: React.FC = () => {
           <div className="relative reveal-left">
             <div className="relative h-full min-h-[400px] overflow-hidden rounded-sm group shadow-[0_0_50px_rgba(0,0,0,0.5)]">
               <img 
-                src="/IMG_9014.JPG" 
+                src="/WhatsApp Image 2026-01-08 at 6.43.57 AM.jpg" 
                 alt="Foundation Launch Event - Vision Presentation and Stakeholder Collaboration" 
                 className="w-full h-full object-cover grayscale brightness-50 contrast-125 transition-transform duration-1000 group-hover:scale-105"
               />
