@@ -109,7 +109,7 @@ const Speakers: React.FC = () => {
                     <img 
                       src={speaker.img} 
                       alt={speaker.name} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 filter grayscale-[0.3] group-hover:grayscale-0"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
                       style={{
                         imageRendering: 'crisp-edges'
                       } as React.CSSProperties}
@@ -175,7 +175,7 @@ const Speakers: React.FC = () => {
                     <img 
                       src={speaker.img}
                       alt={speaker.name} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 filter grayscale-[0.3] group-hover:grayscale-0"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
                       style={{
                         imageRendering: 'crisp-edges'
                       } as React.CSSProperties}
