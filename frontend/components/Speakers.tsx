@@ -88,10 +88,10 @@ const Speakers: React.FC = () => {
       <div className="max-w-[1600px] mx-auto">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20 md:mb-24 reveal-zoom">
-          <h2 className="speakers-title text-[#f2921d] font-black uppercase tracking-tighter leading-none mb-4">
-            KEY SPEAKERS
+          <h2 className="speakers-title text-[#f2921d] font-black tracking-tighter leading-none mb-4">
+            Key Speakers
           </h2>
-          <p className="text-gray-500 uppercase tracking-[0.3em] sm:tracking-[0.5em] font-bold text-[10px] sm:text-xs">Leader Voices - Making Bharath a global frontier for technology and innovation</p>
+          <p className="text-gray-500 tracking-[0.3em] sm:tracking-[0.5em] font-bold text-[10px] sm:text-xs">Leader Voices - Making Bharath a global frontier for technology and innovation</p>
         </div>
 
         {/* Keynote Speakers Section */}
@@ -128,15 +128,15 @@ const Speakers: React.FC = () => {
                 
                 {/* Speaker Info */}
                 <div className="speaker-card p-4 flex-1 flex flex-col">
-                  <h4 className="speaker-name text-white font-black uppercase tracking-tight mb-1 leading-tight">
+                  <h4 className="speaker-name text-white font-black tracking-tight mb-1 leading-tight">
                     {speaker.name}
                   </h4>
                   {speaker.role && (
-                    <p className="speaker-role text-[#f2921d] font-bold uppercase tracking-widest mb-2 text-[10px]">
+                    <p className="speaker-role text-[#f2921d] font-bold tracking-widest mb-2 text-[10px]">
                       {speaker.role}
                     </p>
                   )}
-                  <p className="text-gray-500 text-[9px] uppercase font-bold tracking-wide leading-tight mb-2">
+                  <p className="text-gray-500 text-[9px] font-bold tracking-wide leading-tight mb-2">
                     {speaker.company}
                   </p>
                   {speaker.speechTitle && (
@@ -154,8 +154,8 @@ const Speakers: React.FC = () => {
 
         {/* Panel Discussion Section */}
         <div>
-          <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 sm:mb-6 text-center">
-            PANEL <span className="text-[#f2921d]">DISCUSSION</span>
+          <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-black tracking-tight mb-4 sm:mb-6 text-center">
+            Panel <span className="text-[#f2921d]">Discussion</span>
           </h3>
           <div className="text-center mb-6 sm:mb-8">
             <p className="text-gray-300 text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-4xl mx-auto">
@@ -194,7 +194,7 @@ const Speakers: React.FC = () => {
                 
                 {/* Speaker Info - Compact */}
                 <div className="p-3">
-                  <h4 className="text-white text-xs sm:text-sm font-black uppercase tracking-tight mb-1 leading-tight">
+                  <h4 className="text-white text-xs sm:text-sm font-black tracking-tight mb-1 leading-tight">
                     {speaker.name}
                   </h4>
                   <p className="text-gray-400 text-[10px] sm:text-xs font-medium leading-tight">

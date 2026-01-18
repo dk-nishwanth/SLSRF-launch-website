@@ -21,7 +21,7 @@ const RollOfHonour: React.FC = () => {
       designation: 'First Lady Major of Rajkot, Sr.Adv - Gujarat High Court'
     },
     {
-      name: 'K R M Kishore Kumar, IPS (Retd. DGP)',
+      name: 'Mr. K R M Kishore Kumar, IPS (Retd. DGP)',
       role: 'Guest of Honour',
       designation: 'Director (Finance & Projects), Aayush Hospitals'
     }
@@ -29,17 +29,17 @@ const RollOfHonour: React.FC = () => {
 
   const invitees = [
     { name: 'Dr. G.V. Shankar', role: 'IAS (Retd), Industrialist' },
-    { name: 'Dr. W. Selvamurthy, Ph.D., D.Sc. FAMS, FABMS, FIMSA, FIANS, FIAY', role: 'President, ASTIF, Director General, Amity Directorate of Science & Innovation, Chancellor, Amity University Chhattisgarh and Chair Professor for Life Sciences (Former Distinguished Scientist and Chief Controller R&D (LS), DRDO)' },
+    { name: 'Dr. W. Selvamurthy', role: 'President, ASTIF, Director General, Amity Directorate of Science & Innovation, Chancellor, Amity University Chhattisgarh and Chair Professor for Life Sciences (Former Distinguished Scientist and Chief Controller R&D (LS), DRDO)' },
     { name: 'Dr. Vijendra Tiwari', role: 'Chairman - National Biodiversity Authority' },
     { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India' },
     { name: 'Dr. V.V. SADAMATE', role: 'AGRIL. EXTENSION SPECIALIST & FORMER ADVISER (AGRI.), PLANNING COMMISSION, GOI' },
     { name: 'Dr. S.P. Thyagarajan', role: 'Former Vice Chancellor - University of Madras' },
     { name: 'Dr. Yogita Shukla', role: 'CEO, AddGEO Foundation' },
     { name: 'Dr. Murugeswaran R', role: 'Deputy Advisor - National Medicinal Plants Board' },
-    { name: 'Dr. Chinnaiyah', role: 'Pro- Vice Chancellor, Lingaya University' },
-    { name: 'Dr. Vincent', role: 'Secretary - Tamil Nadu Council for Science and Technology' },
+    { name: 'Dr. Chinnaiyan', role: 'Pro- Vice Chancellor, Lingaya University' },
+    { name: 'Dr. Vincent S', role: 'Secretary - Tamil Nadu Council for Science and Technology' },
     { name: 'Ms. Shoba Menon', role: 'Founder, Nizhalgal, NGO' },
-    { name: 'Dr. Venkateshwaran', role: 'CEO - Proofile.in' },
+    { name: 'Mr. Venkatesh S V', role: 'CEO - Proofile.in' },
     { name: 'Dr. Kirthi Kempiah', role: 'Dalhousie University, Nova Scotia, Canada' }
   ];
 
@@ -80,7 +80,7 @@ const RollOfHonour: React.FC = () => {
         <div className="mb-20 sm:mb-24 reveal-left">
           <div className="text-center mb-12">
             <h3 className="text-[#f2921d] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
-              CHIEF GUEST
+              Chief guest
             </h3>
             <div className="w-16 h-0.5 bg-[#f2921d] mx-auto"></div>
           </div>
@@ -102,7 +102,7 @@ const RollOfHonour: React.FC = () => {
                     <div className="w-12 h-12 mx-auto bg-[#f2921d]/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-[#f2921d]/20 transition-colors">
                       <div className="w-6 h-6 bg-[#f2921d] rounded-full"></div>
                     </div>
-                    <h4 className="text-white text-lg sm:text-xl font-black uppercase tracking-tight mb-2 leading-tight">
+                    <h4 className="text-white text-lg sm:text-xl font-black tracking-tight mb-2 leading-tight">
                       {guest.name}
                     </h4>
                     <p className="text-[#f2921d] text-sm font-bold uppercase tracking-widest mb-3">
