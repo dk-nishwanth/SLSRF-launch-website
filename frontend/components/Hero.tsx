@@ -63,6 +63,13 @@ const Hero: React.FC = () => {
                   Launch
                 </h2>
               </div>
+
+              {/* Foundation Name - Mobile */}
+              <div className="text-center mb-4">
+                <p className="text-base sm:text-lg font-black tracking-wide animate-slide-up delay-900" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <span className="text-white">of </span><span className="text-[#f2921d]">Semporutkalai Life Science Research Foundation</span>
+                </p>
+              </div>
             </div>
 
             {/* Desktop Layout (768px+) - Original side-by-side layout */}
@@ -93,14 +100,15 @@ const Hero: React.FC = () => {
 
             </div>
 
+            {/* Foundation Name - Positioned below main title */}
+            <div className="hidden md:block mt-6 md:mt-8 text-center">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black tracking-wide animate-slide-up delay-900" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                <span className="text-white">of </span><span className="text-[#f2921d]">Semporutkalai Life Science Research Foundation</span>
+              </p>
+            </div>
+
           </div>
 
-          {/* Tagline / Description */}
-          <div className="max-w-4xl mx-auto border-t border-white/10 pt-8 sm:pt-10 md:pt-12 lg:pt-16 mt-6 md:mt-8 px-4 animate-slide-up delay-500">
-            <p className="text-white/90 font-light leading-relaxed tracking-wide italic mb-4 text-lg sm:text-xl md:text-2xl lg:text-3xl">
-              The Divine Launch of <span className="text-[#f2921d] font-black not-italic px-1 sm:px-2">Semporutkalai Life Science Research Foundation</span>
-            </p>
-          </div>
         </div>
       </div>
 

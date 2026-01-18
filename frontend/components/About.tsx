@@ -14,7 +14,7 @@ const About: React.FC = () => {
       {/* Orange & Partner Banner Row */}
       <div className="grid grid-cols-1 lg:grid-cols-4">
         <div className="lg:col-span-3 bg-[#f2921d] about-orange-section flex flex-col justify-center reveal-left">
-          <h2 className="text-white about-orange-title font-black uppercase leading-[0.9] tracking-tighter mb-4 sm:mb-6 title-underline" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+          <h2 className="text-white about-orange-title font-black uppercase leading-[0.9] tracking-tighter mb-4 sm:mb-6 title-underline" style={{ fontFamily: "'Inter', sans-serif" }}>
             #thesemporutkalaivision <br /> A zeal for sustenance
           </h2>
           <div className="mt-4 sm:mt-6">
@@ -33,17 +33,14 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-2 gap-2">
         <div className="relative aspect-video lg:aspect-auto min-h-[400px] sm:min-h-[500px] md:min-h-[600px] reveal-zoom overflow-hidden group">
           <img 
-            src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop" 
-            alt="Scientific Conference and Knowledge Exchange" 
+            src="/WhatsApp Image 2025-12-05 at 16.26.26_02490540.jpg" 
+            alt="SLSRF Foundation Launch Event - Vision Presentation and Stakeholder Collaboration" 
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="absolute bottom-4 sm:bottom-6 md:bottom-10 lg:bottom-16 left-4 sm:left-6 md:left-10 lg:left-16 right-4 sm:right-6 md:right-10 lg:right-16 text-white">
              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black uppercase tracking-tighter mb-3 sm:mb-4 md:mb-6">Visionary Exchange</h3>
-             <div className="space-y-1 sm:space-y-2">
-                <p className="text-[#f2921d] font-bold uppercase tracking-widest text-[10px] sm:text-xs md:text-sm">Topic:</p>
-                <p className="text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl uppercase tracking-tighter leading-tight">Building a Legacy with Indian Roots</p>
-             </div>
+             <p className="text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl uppercase tracking-tighter leading-tight">Building a Legacy with Indian Roots</p>
           </div>
         </div>
         

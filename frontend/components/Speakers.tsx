@@ -12,75 +12,75 @@ const Speakers: React.FC = () => {
     },
     {
       name: 'Prof Kamlesh Joshipura',
-      role: 'Keynote Speaker',
+      role: '',
       company: 'Vice-Chancellor of Saurashtra University, Rajkot',
       speechTitle: 'To be decided',
-      img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop'
+      img: '/Kamlesh_Joshipura.jpg'
     },
     {
       name: 'Mr Kishore Kumar KRM IPS',
-      role: 'Keynote Speaker',
+      role: '',
       company: 'Director, Ayush Hospitals',
       speechTitle: 'To be decided',
       img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2070&auto=format&fit=crop'
     },
     {
-      name: 'Thiru R Shrinivasan',
-      role: 'Keynote Speaker',
+      name: 'Thiru R. Srinivasan',
+      role: '',
       company: 'Chairman, KSR Educational Institutions',
-      speechTitle: 'To be decided',
-      img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop'
+      speechTitle: 'Academia as a Pillar in Nation-Building for Sustenance',
+      img: '/Srinivasan_R.jpg'
     },
     {
-      name: 'Dr Shriraam Sekher',
-      role: 'Keynote Speaker',
+      name: 'Shriraam Shekher S R',
+      role: '',
       company: 'President, International Media Organisation',
       speechTitle: 'To be decided',
-      img: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop'
+      img: '/Dr_Shriraam_Sekher.jpg'
     },
     {
       name: 'Dr. Yogita Shukla',
-      role: 'Keynote Speaker',
+      role: '',
       company: 'CEO, AddGEO Foundation',
       speechTitle: 'To be decided',
-      img: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2070&auto=format&fit=crop'
+      img: '/Dr. Yogita Shukla.jpg'
     },
     {
       name: 'Dr. Murugeswaran R',
-      role: 'Keynote Speaker',
+      role: '',
       company: 'Dept Advisor, NMPB',
       speechTitle: 'To be decided',
       img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop'
     },
     {
-      name: 'Mr Vincent',
-      role: 'Keynote Speaker',
+      name: 'Dr. Vincent S',
+      role: '',
       company: 'Panel Expert',
       speechTitle: 'To be decided',
       img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop'
     },
     {
       name: 'Dr Kotur PB',
-      role: 'Keynote Speaker',
+      role: '',
       company: 'Global Goodwill Ambassador',
-      speechTitle: 'To be decided',
-      img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop'
+      speechTitle: 'Human Capital Doctrine',
+      img: '/Dr Kotur PB.jpg'
     },
     {
-      name: 'Dr Venkateswaran',
-      role: 'Keynote Speaker',
-      company: 'Founder, Profile',
+      name: 'Dr. Venkateshwaran',
+      role: '',
+      company: 'CEO, proofile.in',
       speechTitle: 'To be decided',
       img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop'
     }
   ];
 
   const panelSpeakers = [
-    { name: 'Dr. W. Selvamurthy', role: 'President, ASTIF', img: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=400&auto=format&fit=crop' },
-    { name: 'Mr Shankar GV', role: 'President & CEO, Global Connect Inc', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop' },
-    { name: 'Mr Sadamate VV', role: 'Former Adviser Agriculture, Planning Commission', img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop' },
-    { name: 'Dr Thyagaraja SP', role: 'Former Vice Chancellor, Madras University', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop' },
-    { name: 'Mr Sudarshan Suryawanshi', role: 'COO – Axiom India', img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop' }
+    { name: 'Dr. W. Selvamurthy S.P', role: 'President, ASTIF', img: '/Dr_W_Selvamurthy.jpg' },
+    { name: 'Dr. Shankar GV', role: 'President & CEO, Global Connect Inc', img: '/Shankar_GV.jpg' },
+    { name: 'Dr. Sadamate V V', role: 'Former Adviser Agriculture, Planning Commission', img: '/VV_Sadamate.jpg' },
+    { name: 'Dr. Thyagarajan S P', role: 'Former Vice Chancellor, Madras University', img: '/Dr Thyagaraja SP.jpg' },
+    { name: 'Dr. Sudarshan Suryawanshi', role: 'COO – Axiom India', img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop' }
   ];
 
   return (
@@ -96,10 +96,6 @@ const Speakers: React.FC = () => {
 
         {/* Keynote Speakers Section */}
         <div className="mb-16 sm:mb-20 md:mb-24">
-          <h3 className="text-white text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight mb-8 sm:mb-12 text-center">
-            KEYNOTE <span className="text-[#f2921d]">SPEAKERS</span>
-          </h3>
-          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6">
             {keynoteSpeakers.map((speaker, index) => (
               <div 
@@ -115,13 +111,6 @@ const Speakers: React.FC = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
-                  
-                  {/* Hover Icon */}
-                  <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-8 h-8 rounded-full bg-[#f2921d] flex items-center justify-center">
-                      <i className="fas fa-microphone text-black text-xs"></i>
-                    </div>
-                  </div>
                 </div>
                 
                 {/* Speaker Info */}
@@ -129,15 +118,17 @@ const Speakers: React.FC = () => {
                   <h4 className="speaker-name text-white font-black uppercase tracking-tight mb-1 leading-tight line-clamp-2">
                     {speaker.name}
                   </h4>
-                  <p className="speaker-role text-[#f2921d] font-bold uppercase tracking-widest mb-2 text-[10px]">
-                    {speaker.role}
-                  </p>
+                  {speaker.role && (
+                    <p className="speaker-role text-[#f2921d] font-bold uppercase tracking-widest mb-2 text-[10px]">
+                      {speaker.role}
+                    </p>
+                  )}
                   <p className="text-gray-500 text-[9px] uppercase font-bold tracking-wide leading-tight line-clamp-2 mb-2">
                     {speaker.company}
                   </p>
                   <div className="border-t border-white/10 pt-2 mt-2">
                     <p className="text-gray-400 text-[10px] sm:text-xs font-medium leading-tight line-clamp-2">
-                      <span className="text-[#f2921d] font-bold">Speech:</span> {speaker.speechTitle}
+                      <span className="text-[#f2921d] font-bold">Title:</span> {speaker.speechTitle}
                     </p>
                   </div>
                 </div>
@@ -148,9 +139,14 @@ const Speakers: React.FC = () => {
 
         {/* Panel Discussion Section */}
         <div>
-          <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight mb-6 sm:mb-8 text-center">
+          <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight mb-4 sm:mb-6 text-center">
             PANEL <span className="text-[#f2921d]">DISCUSSION</span>
           </h3>
+          <div className="text-center mb-6 sm:mb-8">
+            <p className="text-gray-300 text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-4xl mx-auto">
+              <span className="text-[#f2921d] font-bold">Theme:</span> Designing India's Global Leadership: Science, Consciousness & Sustainable Systems.
+            </p>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-5">
             {panelSpeakers.map((speaker, index) => (
               <div 

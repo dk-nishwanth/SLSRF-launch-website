@@ -13,12 +13,9 @@ const Highlights: React.FC = () => {
       <div className="max-w-[1400px] mx-auto">
         {/* Header Section */}
         <div className="mb-12 sm:mb-16 md:mb-20 reveal">
-          <p className="text-[#f2921d] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter mb-1">
-            #SLSRF2026
-          </p>
           <div className="relative inline-block">
             <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[7.5rem] font-black uppercase tracking-tighter leading-tight">
-              DIVINE LAUNCH <span className="text-[#f2921d]">HIGHLIGHTS</span>
+              <span className="text-[#f2921d]">HIGHLIGHTS</span>
             </h2>
             <div className="h-1 sm:h-1.5 md:h-2 bg-[#f2921d] w-1/4 mt-3 sm:mt-4 md:mt-6"></div>
           </div>
@@ -35,23 +32,8 @@ const Highlights: React.FC = () => {
                 alt="Foundation Launch Event - Vision Presentation and Stakeholder Collaboration" 
                 className="w-full h-full object-cover grayscale brightness-50 contrast-125 transition-transform duration-1000 group-hover:scale-105"
               />
-              {/* Dark overlay for better text contrast */}
+              {/* Dark overlay for better visual effect */}
               <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
-              {/* Massive DIVINE LAUNCH text overlay */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-full px-4 sm:px-8 flex justify-center">
-                  <h3
-                    className="text-white text-[14vw] sm:text-[11vw] md:text-[9vw] lg:text-[7vw] xl:text-[5.5vw] font-black uppercase tracking-tighter leading-none select-none text-center"
-                    style={{
-                      textShadow:
-                        '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.7), 0 0 60px rgba(0,0,0,0.5), 2px 2px 4px rgba(0,0,0,0.9), -2px -2px 4px rgba(0,0,0,0.9), 2px -2px 4px rgba(0,0,0,0.9), -2px 2px 4px rgba(0,0,0,0.9)',
-                      WebkitTextStroke: '1px rgba(0,0,0,0.3)'
-                    }}
-                  >
-                    DIVINE<br />LAUNCH
-                  </h3>
-                </div>
-              </div>
             </div>
           </div>
 

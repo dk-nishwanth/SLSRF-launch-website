@@ -5,13 +5,14 @@ const MarqueeSection: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=2070&auto=format&fit=crop", // Product launch event networking
-    "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=2070&auto=format&fit=crop", // Stage event with lights
-    "https://images.unsplash.com/photo-1511578314322-379afb476865?w=2070&auto=format&fit=crop", // Conference room presentation
-    "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=2070&auto=format&fit=crop", // Team celebration launch
-    "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=2070&auto=format&fit=crop", // Product showcase event
-    "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=2070&auto=format&fit=crop", // Launch event celebration
-    "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=2070&auto=format&fit=crop"  // Event audience celebration
+    "/WhatsApp Image 2025-12-05 at 16.26.26_02490540.jpg",
+    "/WhatsApp Image 2025-12-22 at 6.58.39 PM (2).jpg", 
+    "/WhatsApp Image 2026-01-08 at 6.36.12 AM (1) (1).jpg",
+    "/WhatsApp Image 2026-01-08 at 6.39.05 AM (1).jpg",
+    "/WhatsApp Image 2026-01-08 at 6.46.12 AM.jpg",
+    "/IMG_8730.JPG",
+    "/IMG_8734.JPG",
+    "/IMG_8739.JPG"
   ];
 
   // Auto-scroll functionality
