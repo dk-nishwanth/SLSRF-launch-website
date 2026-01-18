@@ -80,7 +80,7 @@ const Speakers: React.FC = () => {
     { name: 'Dr. Shankar G V', role: 'President & CEO, Global Connect Inc', img: '/Shankar_GV.jpg' },
     { name: 'Dr. Sadamate V V', role: 'Former Adviser Agriculture, Planning Commission', img: '/VV_Sadamate.jpg' },
     { name: 'Dr. Vijay Mishra', role: 'Director - S.T.E.M, Q DoTZ S.T.E.M India Pvt Ltd', img: '/Dr. Vijay Mishra.jpeg' },
-    { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India', img: '/Dr. Sudharsan Suryawanshi.jpeg' }
+    { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India', img: '/Dr. Sudharsan Suryawanshi.jpeg?v=2' }
   ];
 
   return (
