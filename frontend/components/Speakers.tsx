@@ -7,7 +7,7 @@ const Speakers: React.FC = () => {
       name: 'Thiru. Jeyachandran Srinivasan',
       role: 'Presidential Address',
       company: 'Founder - SLSRF',
-      speechTitle: 'SLSRF Architecting a scientific and responsible civilization',
+      speechTitle: 'SLSRF | Architecting a Scientific and Responsible Civilization',
       img: '/jc.png'
     },
     {
@@ -21,7 +21,7 @@ const Speakers: React.FC = () => {
       name: 'Mr Kishore Kumar KRM IPS',
       role: '',
       company: 'Director, Ayush Hospitals',
-      speechTitle: 'To be decided',
+      speechTitle: 'Preparing Leaders through a Value-Driven DNA Culture (Like - Mindedness, Sense of Belonging , Willingness to Share, Accountability, Integrity, Inclusiveness)',
       img: '/Mr. K R M Kishore Kumar.png'
     },
     {
@@ -35,7 +35,7 @@ const Speakers: React.FC = () => {
       name: 'Dr. Shriraam Shekher S.R',
       role: '',
       company: 'President, International Media Organisation',
-      speechTitle: 'To be decided',
+      speechTitle: 'The Need for S.T.E.M Innovations Addressing National Priorities',
       img: '/Dr. Shriraam Shekher S.R.jpeg'
     },
     {
@@ -70,8 +70,8 @@ const Speakers: React.FC = () => {
       name: 'Dr. Venkateshwaran',
       role: '',
       company: 'CEO, proofile.in',
-      speechTitle: 'To be decided',
-      img: ''
+      speechTitle: 'Collaborative Intelligence: Industry–Academia Convergence for a Modern Nation',
+      img: '/Mr. S V Venkatesh, CEO - Proofile.in.jpeg'
     }
   ];
 
@@ -110,7 +110,7 @@ const Speakers: React.FC = () => {
                       src={speaker.img} 
                       alt={speaker.name} 
                       className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ${
-                        speaker.name === 'Thiru. Jeyachandran Srinivasan' ? 'grayscale' : ''
+                        speaker.name === 'Thiru. Jeyachandran Srinivasan' || speaker.name === 'Dr. Venkateshwaran' ? 'grayscale' : ''
                       }`}
                     />
                   ) : (
