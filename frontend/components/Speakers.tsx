@@ -43,7 +43,7 @@ const Speakers: React.FC = () => {
       role: '',
       company: 'Global Goodwill Ambassador',
       speechTitle: 'Human Capital Doctrine',
-      img: '/Dr. Kotur P B.jpeg'
+      img: '/Dr. Kotur P B.jpeg?v=2'
     },
     {
       name: 'Dr. Venkateshwaran',
