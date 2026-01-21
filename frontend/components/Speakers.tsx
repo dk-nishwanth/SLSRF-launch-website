@@ -11,25 +11,11 @@ const Speakers: React.FC = () => {
       img: '/jc.png'
     },
     {
-      name: 'Dr. Kamlesh Joshipura',
-      role: 'Chief Guest Address',
-      company: 'Former Vice Chancellor, Sourashtra University, Rajkhot. Founder Vice Chancellor IITE, Chairperson, Legal Research Foundation',
-      speechTitle: '',
-      img: '/Kamlesh_Joshipura.jpg'
-    },
-    {
-      name: 'Mr. K R M Kishore Kumar',
-      role: 'IPS\n(Retd. DGP)',
-      company: 'Director (Finance & Projects), Aayush Hospitals',
-      speechTitle: 'Preparing Leaders through a Value-Driven DNA Culture (Like - Mindedness, Sense of Belonging , Willingness to Share, Accountability, Integrity, Inclusiveness)',
-      img: '/K R M Kishore Kumar, IPS (Retd. DGP).jpeg'
-    },
-    {
-      name: 'Thiru. R Srinivasan',
+      name: 'Dr. Yogita Shukla',
       role: '',
-      company: 'Chairman, KSR Educational Institutions',
-      speechTitle: 'Academia as a Pillar in Nation-Building for Sustenance',
-      img: '/Thiru. R Srinivasan.jpeg?v=2'
+      company: 'CEO, AddGEO Foundation',
+      speechTitle: 'Geospatial Intelligence for Forest and Biodiversity Conservation',
+      img: '/Yogitha.png'
     },
     {
       name: 'Dr. S R Shriraam Shekher',
@@ -39,6 +25,20 @@ const Speakers: React.FC = () => {
       img: '/Dr. S R Shriraam Shekher.jpeg'
     },
     {
+      name: 'Dr. Kamlesh Joshipura',
+      role: 'Chief Guest Address',
+      company: 'Former Vice Chancellor, Sourashtra University, Rajkhot. Founder Vice Chancellor IITE, Chairperson, Legal Research Foundation',
+      speechTitle: '',
+      img: '/Kamlesh Joshipura.png'
+    },
+    {
+      name: 'Mr. K R M Kishore Kumar',
+      role: 'IPS\n(Retd. DGP)',
+      company: 'Director (Finance & Projects), Aayush Hospitals',
+      speechTitle: 'Shaping Minds with Discipline: Guiding the Next Generation of Think Tankers',
+      img: '/Kishorekumar.jpeg'
+    },
+    {
       name: 'Dr. Kotur P B',
       role: '',
       company: 'Global Goodwill Ambassador',
@@ -46,25 +46,25 @@ const Speakers: React.FC = () => {
       img: '/Dr. Kotur P B.jpeg?v=2'
     },
     {
-      name: 'Mr. S\nV  Venkatesh',
+      name: 'Mr. S V Venkatesh',
       role: '',
       company: 'CEO, proofile.in',
       speechTitle: 'Collaborative Intelligence: Industry–Academia Convergence for a Modern Nation',
-      img: '/Mr. S V Venkatesh, CEO - Proofile.in.jpeg'
+      img: '/Venkatesh.png'
     },
     {
-      name: 'Dr. Yogita Shukla',
+      name: 'Thiru. R Srinivasan',
       role: '',
-      company: 'CEO, AddGEO Foundation',
-      speechTitle: '',
-      img: '/Dr. Yogita Shukla.jpg'
+      company: 'Chairman, KSR Educational Institutions',
+      speechTitle: 'Academia as a Pillar in Nation-Building for Sustenance',
+      img: '/Thiru. R Srinivasan.jpeg?v=2'
     },
     {
       name: 'Dr. R Murugeswaran',
       role: '',
       company: 'Deputy Advisor (Medicinal Plant\'s) National Medicine Plants Board',
       speechTitle: '',
-      img: '/Dr. R Murugeswaran.jpeg'
+      img: '/Murugeswaran.png'
     },
     {
       name: 'Dr. Vincent',
@@ -76,11 +76,11 @@ const Speakers: React.FC = () => {
   ];
 
   const panelSpeakers = [
-    { name: 'Dr. Selvamurthy W', role: 'President, ASTIF', img: '/Dr_W_Selvamurthy.jpg' },
-    { name: 'Dr. Shankar G V', role: 'President & CEO, Global Connect Inc', img: '/Shankar_GV.jpg' },
-    { name: 'Dr. Sadamate V V', role: 'Former Adviser Agriculture, Planning Commission', img: '/VV_Sadamate.jpg' },
-    { name: 'Dr. Vijay Mishra', role: 'Director - S.T.E.M, Q DoTZ S.T.E.M India Pvt Ltd', img: '/Dr. Vijay Mishra.jpeg' },
-    { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India', img: '/Dr. Sudharsan Suryawanshi.jpeg?v=2' }
+    { name: 'Dr. Selvamurthy W', role: 'President, ASTIF', img: '/Selvamurthi.png' },
+    { name: 'Dr. Shankar G V', role: 'President & CEO, Global Connect Inc', img: '/GV Shankar.png' },
+    { name: 'Dr. Sadamate V V', role: 'Former Adviser Agriculture, Planning Commission', img: '/Dr. Sadamate V V.png' },
+    { name: 'Dr. Vijay Mishra', role: 'Director - S.T.E.M, Q DoTZ S.T.E.M India Pvt Ltd', img: '/Mishra.png' },
+    { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India', img: '/Suryavanshi.png' }
   ];
 
   return (
