@@ -52,27 +52,27 @@ const Speakers: React.FC = () => {
       speechTitle: 'Collaborative Intelligence: Industry–Academia Convergence for a Modern Nation',
       img: '/Venkatesh.png'
     },
-    {
-      name: 'Thiru. R Srinivasan',
-      role: '',
-      company: 'Chairman, KSR Educational Institutions',
-      speechTitle: 'Academia as a Pillar in Nation-Building for Sustenance',
-      img: '/Thiru. R Srinivasan.jpeg?v=2'
-    },
-    {
-      name: 'Dr. R Murugeswaran',
-      role: '',
-      company: 'Deputy Advisor (Medicinal Plant\'s) National Medicine Plants Board',
-      speechTitle: '',
-      img: '/Murugeswaran.png'
-    },
-    {
-      name: 'Dr. Vincent',
-      role: '',
-      company: 'Secretary - Tamil Nadu Council for Science and Technology',
-      speechTitle: '',
-      img: '/Dr. Vincent.jpeg'
-    }
+    // {
+    //   name: 'Thiru. R Srinivasan',
+    //   role: '',
+    //   company: 'Chairman, KSR Educational Institutions',
+    //   speechTitle: 'Academia as a Pillar in Nation-Building for Sustenance',
+    //   img: '/Thiru. R Srinivasan.jpeg?v=2'
+    // },
+    // {
+    //   name: 'Dr. R Murugeswaran',
+    //   role: '',
+    //   company: 'Deputy Advisor (Medicinal Plant\'s) National Medicine Plants Board',
+    //   speechTitle: '',
+    //   img: '/Murugeswaran.png'
+    // },
+    // {
+    //   name: 'Dr. Vincent',
+    //   role: '',
+    //   company: 'Secretary - Tamil Nadu Council for Science and Technology',
+    //   speechTitle: '',
+    //   img: '/Dr. Vincent.jpeg'
+    // }
   ];
 
   const panelSpeakers = [
@@ -109,7 +109,7 @@ const Speakers: React.FC = () => {
                     <img 
                       src={speaker.img} 
                       alt={speaker.name} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
+                      className="w-full h-full object-cover object-top group-hover:scale-110 transition-all duration-1000"
                       style={{
                         imageRendering: 'crisp-edges'
                       } as React.CSSProperties}
@@ -175,7 +175,7 @@ const Speakers: React.FC = () => {
                     <img 
                       src={speaker.img}
                       alt={speaker.name} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
+                      className="w-full h-full object-cover object-top group-hover:scale-110 transition-all duration-1000"
                       style={{
                         imageRendering: 'crisp-edges'
                       } as React.CSSProperties}
