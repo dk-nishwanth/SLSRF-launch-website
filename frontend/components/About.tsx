@@ -33,13 +33,12 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-2 gap-2">
         <div className="relative aspect-video lg:aspect-auto min-h-[400px] sm:min-h-[500px] md:min-h-[600px] reveal-zoom overflow-hidden group">
           <img 
-            src="/WhatsApp Image 2025-12-05 at 16.26.26_02490540.jpg" 
+            src="/jc sir.jpeg" 
             alt="SLSRF Foundation Launch Event - Vision Presentation and Stakeholder Collaboration" 
             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
           <div className="absolute bottom-4 sm:bottom-6 md:bottom-10 lg:bottom-16 left-4 sm:left-6 md:left-10 lg:left-16 right-4 sm:right-6 md:right-10 lg:right-16 text-white">
-             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black uppercase tracking-tighter mb-3 sm:mb-4 md:mb-6">Visionary Exchange</h3>
+             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black uppercase tracking-tighter mb-3 sm:mb-4 md:mb-6">Visionary <span className="text-[#f2921d]">Exchange</span></h3>
              <p className="text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl uppercase leading-tight" style={{ letterSpacing: '0.15em' }}>Building a Legacy with Indian Roots</p>
           </div>
         </div>
