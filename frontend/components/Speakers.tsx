@@ -25,7 +25,7 @@ const Speakers: React.FC = () => {
       img: '/Dr. S R Shriraam Shekher.jpeg'
     },
     {
-      name: 'Dr. Kamlesh Joshipura',
+      name: 'Prof. Kamlesh Joshipura',
       role: 'Chief Guest Address',
       company: 'Former Vice Chancellor, Sourashtra University, Rajkhot. Founder Vice Chancellor IITE, Chairperson, Legal Research Foundation',
       speechTitle: '',
@@ -46,11 +46,11 @@ const Speakers: React.FC = () => {
       img: '/Dr. Kotur P B.jpeg?v=2'
     },
     {
-      name: 'Mr. S V Venkatesh',
+      name: 'Shri. S V Venkatesh',
       role: '',
       company: 'CEO, proofile.in',
       speechTitle: 'Collaborative Intelligence: Industry–Academia Convergence for a Modern Nation',
-      img: '/Venkatesh.png'
+      img: '/S V venkatesh.png'
     },
     {
       name: 'Dr. Murugeswaran',
@@ -87,7 +87,8 @@ const Speakers: React.FC = () => {
     { name: 'Dr. Shankar G V', role: 'President & CEO, Global Connect Inc', img: '/GV Shankar.png' },
     { name: 'Dr. Sadamate V V', role: 'Former Adviser Agriculture, Planning Commission', img: '/Dr. Sadamate V V.png' },
     { name: 'Dr. Vijay Mishra', role: 'Director - S.T.E.M, Q DoTZ S.T.E.M India Pvt Ltd', img: '/Mishra.png' },
-    { name: 'Dr. Sudharsan Suryawanshi', role: 'COO – Axiom India', img: '/Suryavanshi.png' }
+    { name: 'Dr. Kriti Yadav', role: 'CEO, Zenfinity Energy Private Limited, India. Former Director of Operations, Zen Energy Inc., Canada', img: '/Dr. Kriti Yadav.png' },
+    { name: 'Shri. Sudarshan Suryavanshi', role: 'COO – Axiom India', img: '/Suryavanshi.png' }
   ];
 
   return (

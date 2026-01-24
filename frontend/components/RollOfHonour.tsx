@@ -33,7 +33,7 @@ const RollOfHonour: React.FC = () => {
       designation: 'First Lady Major of Rajkot, Sr.Adv - Gujarat High Court'
     },
     {
-      name: 'Mr. K R M Kishore Kumar',
+      name: 'Shri. K R M Kishore Kumar',
       role: 'Guest of Honour',
       title: 'IPS\n(Retd. DGP)',
       designation: 'Director (Finance & Projects), Aayush Hospitals'
